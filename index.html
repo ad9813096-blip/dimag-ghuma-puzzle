@@ -1,1 +1,261 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6c4ab6">
 
+  <title>तुम कर सकते हो? – Tricky Puzzles</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+
+    <div class="game-title">
+      🧠 <span>तुम कर सकते हो?</span>
+    </div>
+
+    <div class="top-stats">
+      🪙 <span id="coins">100</span>
+      ❤️ <span id="lives">5</span>
+    </div>
+
+  </header>
+
+
+  <!-- HOME -->
+
+  <section id="home" class="screen active">
+
+    <div class="logo">
+      🧠
+    </div>
+
+    <h1>तुम कर सकते हो?</h1>
+
+    <p class="subtitle">
+      Tricky Puzzles
+    </p>
+
+    <p class="intro">
+      आसान दिखने वाली पहेलियों में छुपा है असली दिमागी खेल! 🤯
+    </p>
+
+    <button class="main-btn" onclick="showScreen('levels')">
+      ▶️ खेलना शुरू करें
+    </button>
+
+    <button class="secondary-btn" onclick="showScreen('howto')">
+      ❓ कैसे खेलें?
+    </button>
+
+  </section>
+
+
+  <!-- LEVELS -->
+
+  <section id="levels" class="screen">
+
+    <h2>🗺️ Level चुनो</h2>
+
+    <p class="small">
+      जितने Level पूरे करोगे, उतने नए Level खुलेंगे।
+    </p>
+
+    <div id="levelGrid" class="level-grid"></div>
+
+    <button class="back-btn" onclick="showScreen('home')">
+      ← वापस
+    </button>
+
+  </section>
+
+
+  <!-- GAME -->
+
+  <section id="game" class="screen">
+
+    <div class="level-head">
+
+      <button class="mini-btn" onclick="showScreen('levels')">
+        ←
+      </button>
+
+      <b>
+        Level <span id="currentLevel">1</span>
+      </b>
+
+      <span>
+        🪙 <span id="gameCoins">100</span>
+      </span>
+
+    </div>
+
+
+    <div class="question-card">
+
+      <div id="puzzleNumber" class="puzzle-number">
+        Puzzle 1
+      </div>
+
+      <h2 id="question">
+        सवाल यहाँ आएगा
+      </h2>
+
+      <div id="puzzleArea" class="puzzle-area"></div>
+
+      <div id="options" class="options"></div>
+
+    </div>
+
+
+    <div class="game-actions">
+
+      <button class="hint-btn" onclick="useHint()">
+        💡 Hint - 20 🪙
+      </button>
+
+      <button class="skip-btn" onclick="skipLevel()">
+        ⏭️ Skip - 30 🪙
+      </button>
+
+    </div>
+
+
+    <div id="gameMessage" class="game-message"></div>
+
+  </section>
+
+
+  <!-- HOW TO -->
+
+  <section id="howto" class="screen">
+
+    <div class="card">
+
+      <h2>🧠 कैसे खेलें?</h2>
+
+      <p>
+        हर Level आसान दिखाई देगा, लेकिन उसका जवाब
+        थोड़ा हटकर सोचने पर मिलेगा।
+      </p>
+
+      <p>
+        👉 कभी सही जवाब चुनना होगा।
+      </p>
+
+      <p>
+        👉 कभी किसी चीज़ को दबाना होगा।
+      </p>
+
+      <p>
+        👉 कभी किसी चीज़ को Drag करना होगा।
+      </p>
+
+      <p>
+        👉 और कभी सवाल को ही अलग तरीके से समझना होगा। 😜
+      </p>
+
+      <hr>
+
+      <p>
+        💡 Hint लेने में 20 Coins लगेंगे।
+      </p>
+
+      <p>
+        ❤️ गलत जवाब देने पर एक Life कम होगी।
+      </p>
+
+    </div>
+
+    <button class="back-btn" onclick="showScreen('home')">
+      ← वापस
+    </button>
+
+  </section>
+
+
+  <!-- RESULT -->
+
+  <section id="result" class="screen">
+
+    <div class="result-icon">
+      🎉
+    </div>
+
+    <h1 id="resultTitle">
+      सही जवाब!
+    </h1>
+
+    <p id="resultText">
+      शानदार!
+    </p>
+
+    <div class="reward">
+      🪙 +20 Coins
+    </div>
+
+    <button
+      class="main-btn"
+      onclick="nextLevel()"
+    >
+      ➡️ अगला Level
+    </button>
+
+    <button
+      class="secondary-btn"
+      onclick="showScreen('levels')"
+    >
+      🗺️ Level Map
+    </button>
+
+  </section>
+
+
+  <!-- GAME OVER -->
+
+  <section id="gameover" class="screen">
+
+    <div class="result-icon">
+      😵
+    </div>
+
+    <h1>Lives खत्म!</h1>
+
+    <p>
+      कोई बात नहीं भाई! फिर से कोशिश करो। 💪
+    </p>
+
+    <button
+      class="main-btn"
+      onclick="restoreLives()"
+    >
+      ❤️ 5 Lives वापस
+    </button>
+
+    <button
+      class="secondary-btn"
+      onclick="showScreen('levels')"
+    >
+      🗺️ Level Map
+    </button>
+
+  </section>
+
+
+  <footer>
+    तुम कर सकते हो? 🧠 – V1.0
+  </footer>
+
+</div>
+
+
+<script src="game.js"></script>
+
+</body>
+</html>
