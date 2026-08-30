@@ -1046,33 +1046,32 @@ function checkAnswer(selected){
 
 function wrongAnswer(){
 
+  // 🔊 Funny wrong-answer sound
   gameSound("wrong");
-  gameVibrate(150);
-  
+
+  // ❌ Life कम
   gameData.lives--;
 
   updateTop();
-
   saveGame();
 
-
+  // 😄 Better message
   document.getElementById(
     "gameMessage"
-  ).innerText=
-    "❌ गलत! एक Life कम हो गई।";
+  ).innerText =
+    "😄 ओहो! गलत जवाब... फिर से सोचो!";
 
-
-  if(gameData.lives<=0){
+  // ❤️ Lives खत्म
+  if(gameData.lives <= 0){
 
     setTimeout(
-      ()=>showScreen("gameover"),
+      () => showScreen("gameover"),
       700
     );
 
   }
 
 }
-
 
 // ===============================
 // COMPLETE
