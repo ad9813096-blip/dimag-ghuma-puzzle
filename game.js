@@ -1079,6 +1079,8 @@ function wrongAnswer(){
 // ===============================
 function completeLevel(){
 
+  showVictoryCelebration();
+  
   gameSound("win");
   gameVibrate([100,50,100]);
   
@@ -1324,3 +1326,76 @@ document.addEventListener(
 
   }
 );
+
+function showVictoryCelebration(){
+
+  const container =
+    document.getElementById(
+      "victoryCelebration"
+    );
+
+  if(!container)
+    return;
+
+  container.innerHTML = "";
+
+  // 🎉 Big victory pop
+  const pop =
+    document.createElement("div");
+
+  pop.className =
+    "victory-pop";
+
+  pop.innerText =
+    "🎉";
+
+  container.appendChild(pop);
+
+
+  // 🎊 Confetti
+  for(let i = 0; i < 45; i++){
+
+    const piece =
+      document.createElement("div");
+
+    piece.className =
+      "confetti-piece";
+
+    piece.style.left =
+      Math.random() * 100 + "%";
+
+    piece.style.animationDelay =
+      Math.random() * .5 + "s";
+
+    piece.style.transform =
+      "rotate(" +
+      Math.random() * 360 +
+      "deg)";
+
+    container.appendChild(piece);
+
+  }
+
+
+  // 📳 Vibration
+  if("vibrate" in navigator){
+
+    navigator.vibrate([
+      100,
+      50,
+      150,
+      50,
+      200
+    ]);
+
+  }
+
+
+  // Remove effect
+  setTimeout(function(){
+
+    container.innerHTML = "";
+
+  },2500);
+
+}
