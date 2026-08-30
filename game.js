@@ -1046,6 +1046,9 @@ function checkAnswer(selected){
 
 function wrongAnswer(){
 
+  gameSound("wrong");
+  gameVibrate(150);
+  
   gameData.lives--;
 
   updateTop();
@@ -1076,6 +1079,9 @@ function wrongAnswer(){
 // ===============================
 function completeLevel(){
 
+  gameSound("win");
+  gameVibrate([100,50,100]);
+  
   const alreadyCompleted =
     gameData.completed.includes(currentLevel);
 
