@@ -1074,69 +1074,58 @@ function wrongAnswer(){
 // ===============================
 // COMPLETE
 // ===============================
-
 function completeLevel(){
 
-  const already=
-    gameData.completed.includes(
-      currentLevel
-    );
+  const alreadyCompleted =
+    gameData.completed.includes(currentLevel);
 
+  let stars = 3;
 
-  if(!already){
+  if(hintUsed)
+    stars = 2;
 
-    gameData.completed.push(
-      currentLevel
-    );
+  if(!alreadyCompleted){
 
-    gameData.coins+=20;
+    gameData.completed.push(currentLevel);
+
+    gameData.coins += 20;
 
   }
 
-
   if(
-    currentLevel===
-    gameData.unlocked &&
-    gameData.unlocked<
-    puzzles.length
+    currentLevel === gameData.unlocked &&
+    gameData.unlocked < puzzles.length
   ){
 
     gameData.unlocked++;
 
   }
 
-
   saveGame();
-
   updateTop();
-
 
   document.getElementById(
     "resultTitle"
-  ).innerText=
-    "🎉 सही जवाब!";
-
+  ).innerText =
+    "🎉 LEVEL COMPLETE!";
 
   document.getElementById(
     "resultText"
-  ).innerText=
+  ).innerText =
     currentPuzzle.success;
 
+  const reward =
+    document.getElementById(
+      "result"
+    ).querySelector(".reward");
 
-  document.getElementById(
-    "result"
-  )
-  .querySelector(".reward")
-  .innerText=
-    already
-      ? "🧠 Level दोबारा पूरा!"
-      : "🪙 +20 Coins";
-
+  reward.innerText =
+    "⭐".repeat(stars) +
+    "  🪙 +20 Coins";
 
   showScreen("result");
 
 }
-
 
 // ===============================
 // NEXT
