@@ -351,3 +351,185 @@ button {
   }
 
 }
+
+/* =========================
+   PREMIUM HOME SCREEN
+========================= */
+
+#home {
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 18px;
+}
+
+#home::before,
+#home::after {
+  content: "🧩";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.08;
+  animation: floatPuzzle 4s ease-in-out infinite;
+}
+
+#home::before {
+  left: 8%;
+  top: 12%;
+}
+
+#home::after {
+  right: 8%;
+  bottom: 15%;
+  animation-delay: 1.5s;
+}
+
+.home-logo {
+  width: 105px;
+  height: 105px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+
+  font-size: 58px;
+
+  background: linear-gradient(
+    135deg,
+    #6c5ce7,
+    #0984e3
+  );
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.35),
+    inset 0 1px 1px rgba(255,255,255,.3);
+
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+#home h1 {
+  margin: 0;
+  font-size: 39px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.game-name {
+  margin-top: 7px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  opacity: .9;
+}
+
+.intro {
+  margin: 18px auto;
+  max-width: 340px;
+  line-height: 1.6;
+  font-size: 16px;
+  opacity: .82;
+}
+
+.home-stats {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 8px 0 22px;
+}
+
+.stat {
+  min-width: 90px;
+  padding: 10px 16px;
+  border-radius: 30px;
+
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.15);
+
+  backdrop-filter: blur(10px);
+
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.main-btn {
+  width: min(340px, 90%);
+  padding: 17px 25px;
+  border-radius: 18px;
+
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+
+  background: linear-gradient(
+    135deg,
+    #00b894,
+    #0984e3
+  );
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.3),
+    0 4px 0 rgba(0,0,0,.2);
+
+  transition: .15s;
+}
+
+.main-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.secondary-btn {
+  width: min(340px, 90%);
+  margin-top: 12px;
+  padding: 13px 20px;
+
+  border-radius: 16px;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.18);
+
+  backdrop-filter: blur(10px);
+
+  transition: .15s;
+}
+
+.secondary-btn:active {
+  transform: scale(.97);
+  background: rgba(255,255,255,.18);
+}
+
+.home-footer {
+  margin-top: 25px;
+  font-size: 13px;
+  opacity: .55;
+  letter-spacing: .5px;
+}
+
+@keyframes logoFloat {
+
+  0%,100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+
+}
+
+@keyframes floatPuzzle {
+
+  0%,100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-25px) rotate(15deg);
+  }
+
+}
