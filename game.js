@@ -1,122 +1,275 @@
 const puzzles = [
+
+  // ---------- LEVEL 1 ----------
   {
-    type: "choice",
-    question: "🍎 इनमें सबसे बड़ा फल कौन सा है?",
-    area: "🍎   🍉   🍒",
-    options: ["सेब", "चेरी", "तरबूज", "अंगूर"],
-    answer: 2,
-    hint: "फल के आकार को ध्यान से देखो।",
-    success: "🎉 सही! तरबूज सबसे बड़ा है!"
+    type:"choice",
+    question:"🍎 इनमें सबसे बड़ा फल कौन सा है?",
+    area:"🍎   🍉   🍒",
+    options:["सेब","चेरी","तरबूज","अंगूर"],
+    answer:2,
+    hint:"फल के आकार को देखो।",
+    success:"🎉 सही! तरबूज सबसे बड़ा है!"
   },
 
+  // ---------- LEVEL 2 ----------
   {
-    type: "drag",
-    question: "🐱 बिल्ली को दूध तक पहुँचाओ!",
-    area: "",
-    options: [],
-    answer: "milk",
-    hint: "दूध को बिल्ली के पास Drag करो।",
-    success: "🐱🥛 वाह! बिल्ली को दूध मिल गया!"
+    type:"drag",
+    question:"🐱 बिल्ली को दूध तक पहुँचाओ!",
+    area:"",
+    answer:"milk",
+    hint:"दूध को बिल्ली के पास Drag करो।",
+    success:"🐱🥛 वाह! बिल्ली को दूध मिल गया!"
   },
 
+  // ---------- LEVEL 3 ----------
   {
-    type: "choice",
-    question: "🔢 कौन सा नंबर गायब है?\n1, 2, 3, 4, ?, 6",
-    area: "1️⃣ 2️⃣ 3️⃣ 4️⃣ ❓ 6️⃣",
-    options: ["4", "5", "7", "10"],
-    answer: 1,
-    hint: "नंबरों का क्रम देखो।",
-    success: "🧠 सही! 5 गायब था!"
+    type:"choice",
+    question:"🔢 कौन सा नंबर गायब है?\n1, 2, 3, 4, ?, 6",
+    area:"1️⃣ 2️⃣ 3️⃣ 4️⃣ ❓ 6️⃣",
+    options:["4","5","7","10"],
+    answer:1,
+    hint:"नंबरों का क्रम देखो।",
+    success:"🧠 सही! 5 गायब था!"
   },
 
+  // ---------- LEVEL 4 ----------
   {
-    type: "tap",
-    question: "🔍 स्क्रीन पर छुपा हुआ तारा ढूँढो!",
-    area: "🌳 🌳 🌳",
-    options: [],
-    answer: "star",
-    hint: "पेड़ों के आसपास ध्यान से देखो।",
-    success: "⭐ मिल गया! तुम्हारी नजर तेज है!"
+    type:"tap",
+    question:"🔍 छुपा हुआ तारा ढूँढो!",
+    area:"",
+    answer:"star",
+    hint:"पेड़ों के आसपास ध्यान से देखो।",
+    success:"⭐ मिल गया! नजर तेज है!"
   },
 
+  // ---------- LEVEL 5 ----------
   {
-    type: "choice",
-    question: "🐔 मुर्गी के कितने पैर होते हैं?",
-    area: "🐔",
-    options: ["1", "2", "3", "4"],
-    answer: 1,
-    hint: "मुर्गी को ध्यान से देखो।",
-    success: "🐔 बिल्कुल सही — 2 पैर!"
+    type:"choice",
+    question:"🐔 मुर्गी के कितने पैर होते हैं?",
+    area:"🐔",
+    options:["1","2","3","4"],
+    answer:1,
+    hint:"मुर्गी को ध्यान से देखो।",
+    success:"🐔 बिल्कुल सही — 2 पैर!"
   },
 
+  // ---------- LEVEL 6 ----------
   {
-    type: "drag",
-    question: "🗑️ कचरा डस्टबिन में डालो!",
-    area: "",
-    options: [],
-    answer: "bin",
-    hint: "कचरे को पकड़कर डस्टबिन तक ले जाओ।",
-    success: "♻️ बहुत बढ़िया! कचरा सही जगह पहुँच गया!"
+    type:"drag",
+    question:"🗑️ कचरा डस्टबिन में डालो!",
+    area:"",
+    answer:"bin",
+    hint:"कचरे को पकड़कर डस्टबिन तक ले जाओ।",
+    success:"♻️ बहुत बढ़िया!"
   },
 
+  // ---------- LEVEL 7 ----------
   {
-    type: "choice",
-    question: "☀️ सूरज को 'नीचे' कैसे करोगे?",
-    area: "☀️ 🌅",
-    options: [
+    type:"choice",
+    question:"☀️ सूरज को 'नीचे' कैसे करोगे?",
+    area:"☀️ 🌅",
+    options:[
       "सूरज को खींचो",
       "फोन की Brightness कम करो",
       "सूरज पर पानी डालो",
       "पेड़ काट दो"
     ],
-    answer: 1,
-    hint: "सूरज को छूने की जरूरत नहीं है।",
-    success: "😂 कमाल! Brightness कम करके सूरज को नीचे कर दिया!"
+    answer:1,
+    hint:"सूरज को छूने की जरूरत नहीं।",
+    success:"😂 कमाल! Brightness कम करके सूरज नीचे कर दिया!"
   },
 
+  // ---------- LEVEL 8 ----------
   {
-    type: "tap",
-    question: "🎯 सिर्फ लाल गेंद को दबाओ!",
-    area: "🔵   🟢   🔴   🟡",
-    options: [],
-    answer: "red",
-    hint: "सिर्फ लाल गेंद को दबाना है।",
-    success: "🎯 बिल्कुल सही!"
+    type:"tap",
+    question:"🎯 सिर्फ लाल गेंद दबाओ!",
+    area:"",
+    answer:"red",
+    hint:"सिर्फ लाल गेंद को दबाना है।",
+    success:"🎯 बिल्कुल सही!"
   },
 
+  // ---------- LEVEL 9 ----------
   {
-    type: "drag",
-    question: "🔑 चाबी को ताले तक पहुँचाओ!",
-    area: "",
-    options: [],
-    answer: "key",
-    hint: "चाबी को पकड़कर ताले पर ले जाओ।",
-    success: "🔓 दरवाजा खुल गया!"
+    type:"drag",
+    question:"🔑 चाबी को ताले तक पहुँचाओ!",
+    area:"",
+    answer:"key",
+    hint:"चाबी को पकड़कर ताले पर ले जाओ।",
+    success:"🔓 दरवाजा खुल गया!"
   },
 
+  // ---------- LEVEL 10 ----------
   {
-    type: "choice",
-    question: "🧠 सबसे पहले क्या करना चाहिए?",
-    area: "🤔 ❓ 🧠",
-    options: [
+    type:"choice",
+    question:"🧠 सबसे पहले क्या करना चाहिए?",
+    area:"🤔 ❓ 🧠",
+    options:[
       "कोई भी जवाब दबाओ",
       "सवाल ध्यान से पढ़ो",
       "फोन बंद करो",
       "गेम छोड़ दो"
     ],
-    answer: 1,
-    hint: "Tricky game में सबसे जरूरी चीज क्या है?",
-    success: "🏆 शानदार! ध्यान से सोचना ही असली Trick है!"
+    answer:1,
+    hint:"Tricky game में सबसे जरूरी चीज क्या है?",
+    success:"🏆 शानदार!"
+  },
+
+  // ==================================================
+  // LEVEL 11
+  // ==================================================
+
+  {
+    type:"choice",
+    question:"🐘 हाथी से बड़ा क्या है?",
+    area:"🐘",
+    options:[
+      "चूहा",
+      "पहाड़",
+      "बिल्ली",
+      "चींटी"
+    ],
+    answer:1,
+    hint:"जानवरों के बाहर भी सोचो।",
+    success:"🧠 सही! पहाड़ बहुत बड़ा है!"
+  },
+
+  // LEVEL 12
+
+  {
+    type:"tap",
+    question:"👀 कौन सी आँख अलग है?",
+    area:"",
+    answer:"different",
+    hint:"चारों आँखों को ध्यान से देखो।",
+    success:"👀 शानदार observation!"
+  },
+
+  // LEVEL 13
+
+  {
+    type:"drag",
+    question:"🍎 सेब को टोकरी में डालो!",
+    area:"",
+    answer:"basket",
+    hint:"सेब को पकड़ो और टोकरी तक ले जाओ।",
+    success:"🍎🧺 सेब टोकरी में पहुँच गया!"
+  },
+
+  // LEVEL 14
+
+  {
+    type:"choice",
+    question:"⏰ अगर अभी 2 बजे हैं तो 2 घंटे बाद कितना बजेगा?",
+    area:"⏰ 2:00",
+    options:[
+      "3 बजे",
+      "4 बजे",
+      "5 बजे",
+      "12 बजे"
+    ],
+    answer:1,
+    hint:"घड़ी को आगे बढ़ाओ।",
+    success:"⏰ बिल्कुल सही — 4 बजे!"
+  },
+
+  // LEVEL 15
+
+  {
+    type:"tap",
+    question:"🐶 सबसे खुश कुत्ता कौन सा है?",
+    area:"",
+    answer:"happy",
+    hint:"सिर्फ चेहरे देखो।",
+    success:"🐶 सही! यही सबसे खुश है!"
+  },
+
+  // LEVEL 16
+
+  {
+    type:"choice",
+    question:"🧠 अगर 5 + 5 = 10 है, तो 10 + 10 कितना होगा?",
+    area:"5 + 5 = 10\n10 + 10 = ?",
+    options:[
+      "15",
+      "20",
+      "25",
+      "100"
+    ],
+    answer:1,
+    hint:"इस बार trick मत ढूँढो।",
+    success:"😄 कभी-कभी सीधा जवाब ही सही होता है!"
+  },
+
+  // LEVEL 17
+
+  {
+    type:"drag",
+    question:"🌙 चाँद को आसमान में वापस रखो!",
+    area:"",
+    answer:"moon",
+    hint:"चाँद को पकड़कर ऊपर वाले target पर ले जाओ।",
+    success:"🌙 रात फिर से सुंदर हो गई!"
+  },
+
+  // LEVEL 18
+
+  {
+    type:"choice",
+    question:"🚗 कौन सी गाड़ी पीछे जा रही है?",
+    area:"🚗 ➡️   🚙 ⬅️",
+    options:[
+      "पहली",
+      "दूसरी",
+      "दोनों",
+      "कोई नहीं"
+    ],
+    answer:1,
+    hint:"Arrow को ध्यान से देखो।",
+    success:"🚙 सही! दूसरी गाड़ी पीछे जा रही है!"
+  },
+
+  // LEVEL 19
+
+  {
+    type:"tap",
+    question:"🔴 लाल रंग को ढूँढकर दबाओ!",
+    area:"",
+    answer:"red19",
+    hint:"बाकी रंगों से अलग रंग देखो।",
+    success:"🔴 मिल गया!"
+  },
+
+  // LEVEL 20
+
+  {
+    type:"choice",
+    question:"🏆 इस गेम को जीतने का सबसे अच्छा तरीका क्या है?",
+    area:"🧠 ❤️ 👀",
+    options:[
+      "जल्दी-जल्दी दबाना",
+      "हर सवाल को ध्यान से देखना",
+      "Random answer देना",
+      "Game बंद कर देना"
+    ],
+    answer:1,
+    hint:"दिमागी गेम में सबसे जरूरी चीज क्या है?",
+    success:"🏆 LEVEL 20 COMPLETE! तुम सच में कर सकते हो!"
   }
+
 ];
 
 
+// ===============================
+// GAME DATA
+// ===============================
+
 const defaultGame = {
-  coins: 100,
-  lives: 5,
-  unlocked: 1,
-  completed: [],
-  currentLevel: 1
+  coins:100,
+  lives:5,
+  unlocked:1,
+  completed:[],
+  currentLevel:1
 };
 
 
@@ -126,10 +279,14 @@ let gameData =
   ) || {...defaultGame};
 
 
-let currentPuzzle = null;
-let currentLevel = 1;
-let hintUsed = false;
+let currentPuzzle=null;
+let currentLevel=1;
+let hintUsed=false;
 
+
+// ===============================
+// SAVE
+// ===============================
 
 function saveGame(){
 
@@ -140,6 +297,10 @@ function saveGame(){
 
 }
 
+
+// ===============================
+// TOP BAR
+// ===============================
 
 function updateTop(){
 
@@ -152,26 +313,29 @@ function updateTop(){
   const gameCoins =
     document.getElementById("gameCoins");
 
+
   if(coins)
-    coins.innerText = gameData.coins;
+    coins.innerText=gameData.coins;
 
   if(lives)
-    lives.innerText = gameData.lives;
+    lives.innerText=gameData.lives;
 
   if(gameCoins)
-    gameCoins.innerText = gameData.coins;
+    gameCoins.innerText=gameData.coins;
 
 }
 
+
+// ===============================
+// SCREEN
+// ===============================
 
 function showScreen(id){
 
   document
     .querySelectorAll(".screen")
-    .forEach(screen => {
-
+    .forEach(screen=>{
       screen.classList.remove("active");
-
     });
 
 
@@ -182,8 +346,9 @@ function showScreen(id){
     screen.classList.add("active");
 
 
-  if(id === "levels")
+  if(id==="levels")
     renderLevels();
+
 
   updateTop();
 
@@ -191,6 +356,10 @@ function showScreen(id){
 
 }
 
+
+// ===============================
+// LEVEL MAP
+// ===============================
 
 function renderLevels(){
 
@@ -201,66 +370,63 @@ function renderLevels(){
     return;
 
 
-  grid.innerHTML = "";
+  grid.innerHTML="";
 
 
   puzzles.forEach((puzzle,index)=>{
 
-    const level =
-      index + 1;
+    const level=index+1;
 
     const button =
       document.createElement("button");
 
-    button.className = "level-btn";
+
+    button.className="level-btn";
 
 
-    const isCompleted =
+    const completed =
       gameData.completed.includes(level);
 
-    const isUnlocked =
-      level <= gameData.unlocked;
+
+    const unlocked =
+      level<=gameData.unlocked;
 
 
-    if(isCompleted)
+    if(completed)
       button.classList.add("completed");
 
-    else if(isUnlocked)
+    else if(unlocked)
       button.classList.add("unlocked");
 
     else
       button.classList.add("locked");
 
 
-    if(isCompleted){
+    if(completed){
 
       button.innerHTML =
-        level +
+        level+
         '<span class="check">✓</span>';
 
     }
 
-    else if(isUnlocked){
+    else if(unlocked){
 
-      button.innerText = level;
+      button.innerText=level;
 
     }
 
     else{
 
-      button.innerText = "🔒";
+      button.innerText="🔒";
 
     }
 
 
-    if(isUnlocked){
+    if(unlocked){
 
-      button.onclick =
-        function(){
-
-          startLevel(level);
-
-        };
+      button.onclick=
+        ()=>startLevel(level);
 
     }
 
@@ -272,13 +438,17 @@ function renderLevels(){
 }
 
 
+// ===============================
+// START LEVEL
+// ===============================
+
 function startLevel(level){
 
-  if(level < 1 || level > puzzles.length)
+  if(level<1 || level>puzzles.length)
     return;
 
 
-  if(level > gameData.unlocked){
+  if(level>gameData.unlocked){
 
     showScreen("levels");
 
@@ -287,7 +457,7 @@ function startLevel(level){
   }
 
 
-  if(gameData.lives <= 0){
+  if(gameData.lives<=0){
 
     showScreen("gameover");
 
@@ -296,77 +466,81 @@ function startLevel(level){
   }
 
 
-  currentLevel = level;
+  currentLevel=level;
 
-  currentPuzzle =
-    puzzles[level - 1];
+  currentPuzzle=
+    puzzles[level-1];
 
-  hintUsed = false;
+  hintUsed=false;
 
 
   document.getElementById(
     "currentLevel"
-  ).innerText = level;
+  ).innerText=level;
 
 
   document.getElementById(
     "puzzleNumber"
-  ).innerText =
-    "Puzzle " + level;
+  ).innerText="Puzzle "+level;
 
 
   document.getElementById(
     "question"
-  ).innerText =
+  ).innerText=
     currentPuzzle.question;
 
 
-  const area =
-    document.getElementById("puzzleArea");
-
-  const options =
-    document.getElementById("options");
-
-
-  area.innerHTML = "";
-
-  options.innerHTML = "";
+  const area=
+    document.getElementById(
+      "puzzleArea"
+    );
 
 
-  if(currentPuzzle.type === "choice"){
+  const options=
+    document.getElementById(
+      "options"
+    );
 
-    area.innerText =
+
+  area.innerHTML="";
+
+  options.innerHTML="";
+
+
+  if(currentPuzzle.type==="choice"){
+
+    area.innerText=
       currentPuzzle.area;
 
 
-    currentPuzzle.options.forEach(
-      (option,index)=>{
+    currentPuzzle.options
+      .forEach((option,index)=>{
 
-        const button =
-          document.createElement("button");
+        const button=
+          document.createElement(
+            "button"
+          );
 
-        button.className =
+
+        button.className=
           "option-btn";
 
-        button.innerText =
-          option;
 
-        button.onclick =
-          function(){
+        button.innerText=option;
 
-            checkAnswer(index);
 
-          };
+        button.onclick=
+          ()=>checkAnswer(index);
+
 
         options.appendChild(button);
 
-      }
-    );
+      });
 
   }
 
 
-  if(currentPuzzle.type === "drag"){
+  if(currentPuzzle.type==="drag"){
 
     createDragPuzzle(
       currentLevel,
@@ -376,7 +550,7 @@ function startLevel(level){
   }
 
 
-  if(currentPuzzle.type === "tap"){
+  if(currentPuzzle.type==="tap"){
 
     createTapPuzzle(
       currentLevel,
@@ -388,7 +562,7 @@ function startLevel(level){
 
   document.getElementById(
     "gameMessage"
-  ).innerText =
+  ).innerText=
     "🤔 ध्यान से सोचो...";
 
 
@@ -397,83 +571,87 @@ function startLevel(level){
 }
 
 
+// ===============================
+// DRAG PUZZLES
+// ===============================
+
 function createDragPuzzle(level,area){
 
-  area.style.position =
-    "relative";
+  area.style.position="relative";
 
-  area.style.minHeight =
-    "180px";
+  area.style.minHeight="190px";
 
 
-  let item = "";
-  let target = "";
+  let item="";
+  let target="";
 
 
-  if(level === 2){
+  if(level===2){
 
-    item = "🥛";
-    target = "🐱";
-
-  }
-
-  else if(level === 6){
-
-    item = "🗑️";
-    target = "🗑️";
-
-  }
-
-  else if(level === 9){
-
-    item = "🔑";
-    target = "🔒";
+    item="🥛";
+    target="🐱";
 
   }
 
 
-  const draggable =
+  if(level===6){
+
+    item="🗑️";
+    target="🗑️";
+
+  }
+
+
+  if(level===9){
+
+    item="🔑";
+    target="🔒";
+
+  }
+
+
+  if(level===13){
+
+    item="🍎";
+    target="🧺";
+
+  }
+
+
+  if(level===17){
+
+    item="🌙";
+    target="☁️";
+
+  }
+
+
+  const draggable=
     document.createElement("div");
 
-  draggable.innerText = item;
 
-  draggable.style.position =
-    "absolute";
-
-  draggable.style.left =
-    "25px";
-
-  draggable.style.top =
-    "55px";
-
-  draggable.style.fontSize =
-    "55px";
-
-  draggable.style.cursor =
-    "grab";
-
-  draggable.draggable = true;
+  draggable.innerText=item;
 
 
-  const dropZone =
+  draggable.style.position="absolute";
+  draggable.style.left="20px";
+  draggable.style.top="60px";
+  draggable.style.fontSize="55px";
+  draggable.style.cursor="grab";
+  draggable.draggable=true;
+
+
+  const dropZone=
     document.createElement("div");
 
-  dropZone.innerText = target;
 
-  dropZone.style.position =
-    "absolute";
+  dropZone.innerText=target;
 
-  dropZone.style.right =
-    "25px";
 
-  dropZone.style.top =
-    "55px";
-
-  dropZone.style.fontSize =
-    "55px";
-
-  dropZone.style.padding =
-    "10px";
+  dropZone.style.position="absolute";
+  dropZone.style.right="20px";
+  dropZone.style.top="60px";
+  dropZone.style.fontSize="55px";
 
 
   area.appendChild(draggable);
@@ -482,11 +660,11 @@ function createDragPuzzle(level,area){
 
   draggable.addEventListener(
     "dragstart",
-    function(event){
+    event=>{
 
       event.dataTransfer.setData(
         "text/plain",
-        "drag-item"
+        "drag"
       );
 
     }
@@ -495,17 +673,15 @@ function createDragPuzzle(level,area){
 
   dropZone.addEventListener(
     "dragover",
-    function(event){
-
+    event=>{
       event.preventDefault();
-
     }
   );
 
 
   dropZone.addEventListener(
     "drop",
-    function(event){
+    event=>{
 
       event.preventDefault();
 
@@ -515,84 +691,84 @@ function createDragPuzzle(level,area){
   );
 
 
-  // Mobile touch support
-
-  let dragging = false;
+  let dragging=false;
 
 
   draggable.addEventListener(
     "touchstart",
-    function(){
+    event=>{
 
-      dragging = true;
+      dragging=true;
 
-      draggable.style.transform =
+      draggable.style.transform=
         "scale(1.2)";
 
     }
   );
 
 
-  document.addEventListener(
-    "touchmove",
-    function(event){
+  const moveHandler=
+    event=>{
 
       if(!dragging)
         return;
 
 
-      const touch =
+      event.preventDefault();
+
+
+      const touch=
         event.touches[0];
 
-      const rect =
+
+      const rect=
         area.getBoundingClientRect();
 
 
-      draggable.style.left =
+      draggable.style.left=
         (
-          touch.clientX -
-          rect.left -
-          25
-        ) + "px";
+          touch.clientX-
+          rect.left-
+          27
+        )+"px";
 
 
-      draggable.style.top =
+      draggable.style.top=
         (
-          touch.clientY -
-          rect.top -
-          25
-        ) + "px";
+          touch.clientY-
+          rect.top-
+          27
+        )+"px";
 
-    },
-    {passive:false}
-  );
+    };
 
 
-  document.addEventListener(
-    "touchend",
-    function(){
+  const endHandler=
+    ()=>{
 
       if(!dragging)
         return;
 
-      dragging = false;
 
-      draggable.style.transform =
+      dragging=false;
+
+      draggable.style.transform=
         "scale(1)";
 
 
-      const a =
+      const a=
         draggable.getBoundingClientRect();
 
-      const b =
+
+      const b=
         dropZone.getBoundingClientRect();
 
 
-      const hit =
-        a.left < b.right &&
-        a.right > b.left &&
-        a.top < b.bottom &&
-        a.bottom > b.top;
+      const hit=
+        a.left<b.right &&
+        a.right>b.left &&
+        a.top<b.bottom &&
+        a.bottom>b.top;
 
 
       if(hit){
@@ -601,126 +777,234 @@ function createDragPuzzle(level,area){
 
       }
 
-    }
+    };
+
+
+  document.addEventListener(
+    "touchmove",
+    moveHandler,
+    {passive:false}
+  );
+
+
+  document.addEventListener(
+    "touchend",
+    endHandler
   );
 
 }
 
 
+// ===============================
+// TAP PUZZLES
+// ===============================
+
 function createTapPuzzle(level,area){
 
-  area.style.position =
-    "relative";
+  area.style.position="relative";
 
-  area.style.minHeight =
-    "180px";
+  area.style.minHeight="190px";
 
 
-  if(level === 4){
+  if(level===4){
 
-    const tree =
-      document.createElement("div");
+    area.innerHTML=
+      `
+      <div style="
+        position:absolute;
+        left:25px;
+        top:45px;
+        font-size:48px;
+      ">
+        🌳 🌳 🌳
+      </div>
 
-    tree.innerText =
-      "🌳     🌳     🌳";
-
-    tree.style.fontSize =
-      "55px";
-
-    tree.style.position =
-      "absolute";
-
-    tree.style.top =
-      "35px";
-
-    tree.style.left =
-      "10px";
-
-    area.appendChild(tree);
-
-
-    const star =
-      document.createElement("button");
-
-    star.innerText =
-      "⭐";
-
-    star.style.position =
-      "absolute";
-
-    star.style.right =
-      "15px";
-
-    star.style.bottom =
-      "15px";
-
-    star.style.fontSize =
-      "20px";
-
-    star.style.border =
-      "0";
-
-    star.style.background =
-      "transparent";
-
-    star.style.opacity =
-      "0.25";
-
-    star.onclick =
-      function(){
-
-        completeLevel();
-
-      };
+      <button
+        id="hiddenStar"
+        style="
+          position:absolute;
+          right:15px;
+          bottom:15px;
+          border:0;
+          background:transparent;
+          font-size:20px;
+          opacity:.25;
+        "
+      >
+        ⭐
+      </button>
+      `;
 
 
-    area.appendChild(star);
+    document.getElementById(
+      "hiddenStar"
+    ).onclick=
+      ()=>completeLevel();
 
   }
 
 
-  if(level === 8){
+  if(level===8){
 
-    const balls =
-      ["🔵","🟢","🔴","🟡"];
+    ["🔵","🟢","🔴","🟡"]
+      .forEach(ball=>{
 
-
-    balls.forEach(ball=>{
-
-      const button =
-        document.createElement("button");
-
-      button.innerText = ball;
-
-      button.style.border =
-        "0";
-
-      button.style.background =
-        "transparent";
-
-      button.style.fontSize =
-        "45px";
-
-      button.style.margin =
-        "5px";
+        const button=
+          document.createElement(
+            "button"
+          );
 
 
-      button.onclick =
-        function(){
+        button.innerText=ball;
 
-          if(ball === "🔴"){
+        button.style.border="0";
+        button.style.background=
+          "transparent";
+        button.style.fontSize="45px";
 
+
+        button.onclick=()=>{
+
+          if(ball==="🔴")
             completeLevel();
 
-          }
-
-          else{
-
+          else
             wrongAnswer();
 
-          }
-
         };
+
+
+        area.appendChild(button);
+
+      });
+
+  }
+
+
+  if(level===12){
+
+    const eyes=[
+      "👁️",
+      "👁️",
+      "👀",
+      "👁️"
+    ];
+
+
+    eyes.forEach((eye,index)=>{
+
+      const button=
+        document.createElement(
+          "button"
+        );
+
+
+      button.innerText=eye;
+
+      button.style.border="0";
+      button.style.background=
+        "transparent";
+      button.style.fontSize="50px";
+
+
+      button.onclick=()=>{
+
+        if(index===2)
+          completeLevel();
+
+        else
+          wrongAnswer();
+
+      };
+
+
+      area.appendChild(button);
+
+    });
+
+  }
+
+
+  if(level===15){
+
+    const dogs=[
+      "🐶",
+      "🐶",
+      "🐕",
+      "🐶"
+    ];
+
+
+    dogs.forEach((dog,index)=>{
+
+      const button=
+        document.createElement(
+          "button"
+        );
+
+
+      button.innerText=dog;
+
+      button.style.border="0";
+      button.style.background=
+        "transparent";
+      button.style.fontSize="50px";
+
+
+      button.onclick=()=>{
+
+        if(index===2)
+          completeLevel();
+
+        else
+          wrongAnswer();
+
+      };
+
+
+      area.appendChild(button);
+
+    });
+
+  }
+
+
+  if(level===19){
+
+    const colors=[
+      "🔵",
+      "🟢",
+      "🟡",
+      "🔴",
+      "🟣"
+    ];
+
+
+    colors.forEach(color=>{
+
+      const button=
+        document.createElement(
+          "button"
+        );
+
+
+      button.innerText=color;
+
+      button.style.border="0";
+      button.style.background=
+        "transparent";
+      button.style.fontSize="45px";
+
+
+      button.onclick=()=>{
+
+        if(color==="🔴")
+          completeLevel();
+
+        else
+          wrongAnswer();
+
+      };
 
 
       area.appendChild(button);
@@ -732,10 +1016,14 @@ function createTapPuzzle(level,area){
 }
 
 
+// ===============================
+// ANSWER
+// ===============================
+
 function checkAnswer(selected){
 
   if(
-    selected ===
+    selected===
     currentPuzzle.answer
   ){
 
@@ -752,6 +1040,10 @@ function checkAnswer(selected){
 }
 
 
+// ===============================
+// WRONG
+// ===============================
+
 function wrongAnswer(){
 
   gameData.lives--;
@@ -763,18 +1055,14 @@ function wrongAnswer(){
 
   document.getElementById(
     "gameMessage"
-  ).innerText =
-    "❌ गलत जवाब! एक Life कम हो गई।";
+  ).innerText=
+    "❌ गलत! एक Life कम हो गई।";
 
 
-  if(gameData.lives <= 0){
+  if(gameData.lives<=0){
 
     setTimeout(
-      function(){
-
-        showScreen("gameover");
-
-      },
+      ()=>showScreen("gameover"),
       700
     );
 
@@ -783,28 +1071,34 @@ function wrongAnswer(){
 }
 
 
+// ===============================
+// COMPLETE
+// ===============================
+
 function completeLevel(){
 
-  const alreadyCompleted =
+  const already=
     gameData.completed.includes(
       currentLevel
     );
 
 
-  if(!alreadyCompleted){
+  if(!already){
 
     gameData.completed.push(
       currentLevel
     );
 
-    gameData.coins += 20;
+    gameData.coins+=20;
 
   }
 
 
   if(
-    currentLevel === gameData.unlocked &&
-    gameData.unlocked < puzzles.length
+    currentLevel===
+    gameData.unlocked &&
+    gameData.unlocked<
+    puzzles.length
   ){
 
     gameData.unlocked++;
@@ -819,20 +1113,22 @@ function completeLevel(){
 
   document.getElementById(
     "resultTitle"
-  ).innerText =
+  ).innerText=
     "🎉 सही जवाब!";
 
 
   document.getElementById(
     "resultText"
-  ).innerText =
+  ).innerText=
     currentPuzzle.success;
 
 
   document.getElementById(
     "result"
-  ).querySelector(".reward").innerText =
-    alreadyCompleted
+  )
+  .querySelector(".reward")
+  .innerText=
+    already
       ? "🧠 Level दोबारा पूरा!"
       : "🪙 +20 Coins";
 
@@ -842,12 +1138,16 @@ function completeLevel(){
 }
 
 
+// ===============================
+// NEXT
+// ===============================
+
 function nextLevel(){
 
-  if(currentLevel < puzzles.length){
+  if(currentLevel<puzzles.length){
 
     startLevel(
-      currentLevel + 1
+      currentLevel+1
     );
 
   }
@@ -861,6 +1161,10 @@ function nextLevel(){
 }
 
 
+// ===============================
+// HINT
+// ===============================
+
 function useHint(){
 
   if(!currentPuzzle)
@@ -871,7 +1175,7 @@ function useHint(){
 
     document.getElementById(
       "gameMessage"
-    ).innerText =
+    ).innerText=
       "💡 Hint पहले ही इस्तेमाल हो चुका है।";
 
     return;
@@ -879,11 +1183,11 @@ function useHint(){
   }
 
 
-  if(gameData.coins < 20){
+  if(gameData.coins<20){
 
     document.getElementById(
       "gameMessage"
-    ).innerText =
+    ).innerText=
       "❌ Hint के लिए 20 Coins चाहिए।";
 
     return;
@@ -891,9 +1195,9 @@ function useHint(){
   }
 
 
-  gameData.coins -= 20;
+  gameData.coins-=20;
 
-  hintUsed = true;
+  hintUsed=true;
 
   saveGame();
 
@@ -902,28 +1206,32 @@ function useHint(){
 
   document.getElementById(
     "gameMessage"
-  ).innerText =
-    "💡 Hint: " +
+  ).innerText=
+    "💡 Hint: "+
     currentPuzzle.hint;
 
 }
 
 
+// ===============================
+// SKIP
+// ===============================
+
 function skipLevel(){
 
-  if(gameData.coins < 30){
+  if(gameData.coins<30){
 
     document.getElementById(
       "gameMessage"
-    ).innerText =
-      "❌ Skip करने के लिए 30 Coins चाहिए।";
+    ).innerText=
+      "❌ Skip के लिए 30 Coins चाहिए।";
 
     return;
 
   }
 
 
-  gameData.coins -= 30;
+  gameData.coins-=30;
 
   saveGame();
 
@@ -932,33 +1240,44 @@ function skipLevel(){
 
   document.getElementById(
     "gameMessage"
-  ).innerText =
-    "⏭️ Level Skip किया गया!";
+  ).innerText=
+    "⏭️ Level Skip!";
 
 
-  setTimeout(
-    function(){
+  setTimeout(()=>{
+
+    if(
+      currentLevel<puzzles.length
+    ){
 
       if(
-        currentLevel < puzzles.length
+        currentLevel===
+        gameData.unlocked
       ){
 
-        startLevel(
-          currentLevel + 1
-        );
+        gameData.unlocked++;
 
       }
 
-    },
-    500
-  );
+
+      startLevel(
+        currentLevel+1
+      );
+
+    }
+
+  },500);
 
 }
 
 
+// ===============================
+// RESTORE LIVES
+// ===============================
+
 function restoreLives(){
 
-  gameData.lives = 5;
+  gameData.lives=5;
 
   saveGame();
 
@@ -968,6 +1287,37 @@ function restoreLives(){
 
 }
 
+
+// ===============================
+// RESET
+// ===============================
+
+function resetGame(){
+
+  if(
+    !confirm(
+      "पूरा Game Reset करना है?"
+    )
+  )
+    return;
+
+
+  gameData=
+    {...defaultGame};
+
+
+  saveGame();
+
+  updateTop();
+
+  showScreen("home");
+
+}
+
+
+// ===============================
+// START
+// ===============================
 
 document.addEventListener(
   "DOMContentLoaded",
