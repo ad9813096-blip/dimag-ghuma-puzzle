@@ -1,1 +1,359 @@
+*{
+  box-sizing:border-box;
+}
 
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#171222;
+  color:#fff;
+}
+
+.app{
+  max-width:480px;
+  min-height:100vh;
+  margin:auto;
+  background:linear-gradient(180deg,#241a38,#120d1c);
+  overflow:hidden;
+}
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:10;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:13px 15px;
+
+  background:#6c4ab6;
+  box-shadow:0 3px 10px #0006;
+}
+
+.game-title{
+  font-size:18px;
+  font-weight:bold;
+}
+
+.top-stats{
+  display:flex;
+  gap:10px;
+  font-weight:bold;
+  background:#ffffff18;
+  padding:7px 10px;
+  border-radius:20px;
+}
+
+.screen{
+  display:none;
+  padding:20px 15px;
+  min-height:650px;
+}
+
+.screen.active{
+  display:block;
+}
+
+.logo{
+  width:110px;
+  height:110px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:35px auto 15px;
+
+  border-radius:50%;
+
+  font-size:65px;
+
+  background:#7e57c2;
+  box-shadow:
+    0 0 0 8px #ffffff12,
+    0 10px 30px #0008;
+}
+
+h1{
+  text-align:center;
+  font-size:31px;
+  margin:10px 0 3px;
+}
+
+h2{
+  text-align:center;
+  margin-top:8px;
+}
+
+.subtitle{
+  text-align:center;
+  color:#d5bfff;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.intro{
+  text-align:center;
+  color:#d9d3e5;
+  line-height:1.6;
+  margin:25px 15px;
+}
+
+.main-btn,
+.secondary-btn,
+.back-btn{
+  width:100%;
+  border:0;
+  border-radius:15px;
+  padding:16px;
+  margin-top:12px;
+
+  font-size:17px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  box-shadow:0 4px 8px #0005;
+}
+
+.main-btn{
+  background:#ffca28;
+  color:#241a00;
+}
+
+.secondary-btn{
+  background:#7e57c2;
+  color:white;
+}
+
+.back-btn{
+  background:#332844;
+  color:white;
+}
+
+button:active{
+  transform:scale(.97);
+}
+
+.small{
+  text-align:center;
+  color:#aaa1b9;
+  font-size:13px;
+}
+
+.level-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:20px;
+}
+
+.level-btn{
+  position:relative;
+
+  border:0;
+  border-radius:14px;
+
+  padding:15px 5px;
+
+  background:#352947;
+  color:white;
+
+  font-size:17px;
+  font-weight:bold;
+
+  box-shadow:0 3px 7px #0006;
+}
+
+.level-btn.unlocked{
+  background:#7e57c2;
+}
+
+.level-btn.completed{
+  background:#43a047;
+}
+
+.level-btn.locked{
+  opacity:.45;
+}
+
+.level-btn .check{
+  position:absolute;
+  right:5px;
+  top:4px;
+  font-size:11px;
+}
+
+.level-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  background:#302442;
+  padding:10px;
+  border-radius:13px;
+  margin-bottom:13px;
+}
+
+.mini-btn{
+  border:0;
+  background:#514064;
+  color:white;
+  border-radius:9px;
+  padding:8px 12px;
+  font-size:17px;
+}
+
+.question-card{
+  background:#fff;
+  color:#241d2c;
+
+  border-radius:20px;
+
+  padding:18px 14px;
+
+  box-shadow:0 7px 20px #0008;
+}
+
+.puzzle-number{
+  text-align:center;
+  color:#7650aa;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:7px;
+}
+
+.question-card h2{
+  font-size:23px;
+  line-height:1.35;
+  margin:10px 5px 20px;
+}
+
+.puzzle-area{
+  min-height:90px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:15px;
+
+  border-radius:14px;
+
+  background:#f4effb;
+
+  font-size:55px;
+}
+
+.options{
+  display:grid;
+  gap:10px;
+}
+
+.option-btn{
+  border:2px solid #ded5e9;
+
+  background:#faf8fc;
+
+  color:#2b2235;
+
+  border-radius:13px;
+
+  padding:14px 10px;
+
+  font-size:17px;
+  font-weight:bold;
+}
+
+.option-btn:hover{
+  background:#eee6f8;
+}
+
+.game-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+  margin-top:12px;
+}
+
+.hint-btn,
+.skip-btn{
+  border:0;
+  border-radius:12px;
+  padding:12px 5px;
+  font-weight:bold;
+  color:white;
+}
+
+.hint-btn{
+  background:#00897b;
+}
+
+.skip-btn{
+  background:#795548;
+}
+
+.game-message{
+  min-height:45px;
+
+  margin-top:12px;
+
+  padding:12px;
+
+  text-align:center;
+
+  border-radius:12px;
+
+  background:#302442;
+
+  color:#eee;
+}
+
+.card{
+  background:#fff;
+  color:#29202f;
+
+  border-radius:18px;
+
+  padding:17px;
+
+  box-shadow:0 6px 18px #0007;
+}
+
+.card h2{
+  color:#5c3b92;
+}
+
+.card p{
+  line-height:1.6;
+}
+
+.result-icon{
+  text-align:center;
+  font-size:90px;
+  margin-top:50px;
+}
+
+.reward{
+  text-align:center;
+
+  background:#3b2b4e;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  margin:25px 0;
+
+  font-size:20px;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  color:#82768e;
+  font-size:11px;
+  padding:15px;
+}
