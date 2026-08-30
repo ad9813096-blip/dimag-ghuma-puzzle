@@ -105,32 +105,49 @@ function gameVibrate(pattern) {
 
   <!-- HOME -->
 
-  <section id="home" class="screen active">
+<section id="home" class="screen active">
 
-    <div class="logo">
-      🧠
+  <div class="home-logo">
+    🧠
+  </div>
+
+  <div class="home-title">
+    <h1>तुम कर सकते हो?</h1>
+    <div class="game-name">TRICKY PUZZLES</div>
+  </div>
+
+  <p class="intro">
+    आसान दिखने वाली पहेलियों में<br>
+    छुपा है असली दिमागी खेल! 🧠
+  </p>
+
+  <div class="home-stats">
+    <div class="stat">
+      🪙 <span id="coins">100</span>
     </div>
 
-    <h1>तुम कर सकते हो?</h1>
+    <div class="stat">
+      ❤️ <span id="lives">5</span>
+    </div>
+  </div>
 
-    <p class="subtitle">
-      Tricky Puzzles
-    </p>
+  <button
+    class="main-btn"
+    onclick="showScreen('levels')">
+    ▶️ खेल शुरू करें
+  </button>
 
-    <p class="intro">
-      आसान दिखने वाली पहेलियों में छुपा है असली दिमागी खेल! 🤯
-    </p>
+  <button
+    class="secondary-btn"
+    onclick="showScreen('how')">
+    ❓ कैसे खेलें
+  </button>
 
-    <button class="main-btn" onclick="showScreen('levels')">
-      ▶️ खेलना शुरू करें
-    </button>
+  <div class="home-footer">
+    🧩 सोचो • 🔍 ढूँढो • 🏆 जीतो
+  </div>
 
-    <button class="secondary-btn" onclick="showScreen('howto')">
-      ❓ कैसे खेलें?
-    </button>
-
-  </section>
-
+</section>
 
   <!-- LEVELS -->
 
