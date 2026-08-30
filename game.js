@@ -1380,21 +1380,6 @@ function showVictoryCelebration(){
 
   }
 
-
-  // 📳 Vibration
-  if("vibrate" in navigator){
-
-    navigator.vibrate([
-      100,
-      50,
-      150,
-      50,
-      200
-    ]);
-
-  }
-
-
   // Remove effect
   setTimeout(function(){
 
