@@ -1,145 +1,113 @@
 const puzzles = [
-
   {
-    question: "🐘 हाथी को फ्रिज में कैसे डालोगे?",
-    area: "🐘 + 🧊",
-    options: [
-      "फ्रिज खोलो → हाथी डालो → फ्रिज बंद करो",
-      "हाथी को छोटा करो",
-      "फ्रिज को बड़ा करो",
-      "हाथी को बाहर छोड़ दो"
-    ],
-    answer: 0,
-    hint: "पहले फ्रिज के बारे में सोचो।",
-    success: "😂 बिल्कुल! पहले फ्रिज खोलना पड़ेगा!"
-  },
-
-  {
+    type: "choice",
     question: "🍎 इनमें सबसे बड़ा फल कौन सा है?",
-    area: "🍎  🍉  🍒",
-    options: [
-      "सेब",
-      "चेरी",
-      "तरबूज",
-      "तीनों बराबर"
-    ],
+    area: "🍎   🍉   🍒",
+    options: ["सेब", "चेरी", "तरबूज", "अंगूर"],
     answer: 2,
-    hint: "फल का आकार देखो।",
+    hint: "फल के आकार को ध्यान से देखो।",
     success: "🎉 सही! तरबूज सबसे बड़ा है!"
   },
 
   {
-    question: "🥛 गिलास को दूध से भरना है। क्या करोगे?",
-    area: "🥛    🥛    🥛",
-    options: [
-      "गिलास को उल्टा कर दो",
-      "दूध डालो",
-      "गिलास तोड़ दो",
-      "कुछ मत करो"
-    ],
-    answer: 1,
-    hint: "बहुत आसान लग रहा है... लेकिन ध्यान से सोचो।",
-    success: "🥛 सही! दूध डालना ही तो है!"
+    type: "drag",
+    question: "🐱 बिल्ली को दूध तक पहुँचाओ!",
+    area: "",
+    options: [],
+    answer: "milk",
+    hint: "दूध को बिल्ली के पास Drag करो।",
+    success: "🐱🥛 वाह! बिल्ली को दूध मिल गया!"
   },
 
   {
-    question: "🐱 बिल्ली को दूध तक पहुँचाओ।",
-    area: "🐱  ➡️  🥛",
-    options: [
-      "बिल्ली को दूध के पास ले जाओ",
-      "दूध को बिल्ली के पास ले जाओ",
-      "दोनों को हटा दो",
-      "कुछ मत करो"
-    ],
-    answer: 0,
-    hint: "जिसे चलाया जा सकता है, उसे चलाओ।",
-    success: "🐱 वाह! बिल्ली दूध तक पहुँच गई!"
-  },
-
-  {
+    type: "choice",
     question: "🔢 कौन सा नंबर गायब है?\n1, 2, 3, 4, ?, 6",
     area: "1️⃣ 2️⃣ 3️⃣ 4️⃣ ❓ 6️⃣",
-    options: [
-      "4",
-      "5",
-      "7",
-      "10"
-    ],
+    options: ["4", "5", "7", "10"],
     answer: 1,
     hint: "नंबरों का क्रम देखो।",
     success: "🧠 सही! 5 गायब था!"
   },
 
   {
-    question: "🚪 दरवाजा खोलना है। सही चाबी कौन सी है?",
-    area: "🚪 🔑 🔑 🔑",
-    options: [
-      "पहली चाबी",
-      "दूसरी चाबी",
-      "तीसरी चाबी",
-      "कोई भी नहीं"
-    ],
-    answer: 3,
-    hint: "शायद दरवाजे को चाबी की जरूरत ही नहीं है।",
-    success: "😂 सही! दरवाजा खुला हुआ है!"
+    type: "tap",
+    question: "🔍 स्क्रीन पर छुपा हुआ तारा ढूँढो!",
+    area: "🌳 🌳 🌳",
+    options: [],
+    answer: "star",
+    hint: "पेड़ों के आसपास ध्यान से देखो।",
+    success: "⭐ मिल गया! तुम्हारी नजर तेज है!"
   },
 
   {
+    type: "choice",
     question: "🐔 मुर्गी के कितने पैर होते हैं?",
     area: "🐔",
-    options: [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
+    options: ["1", "2", "3", "4"],
     answer: 1,
     hint: "मुर्गी को ध्यान से देखो।",
-    success: "🐔 सही जवाब — 2 पैर!"
+    success: "🐔 बिल्कुल सही — 2 पैर!"
   },
 
   {
-    question: "☀️ सूरज को जल्दी नीचे कैसे लाओगे?",
+    type: "drag",
+    question: "🗑️ कचरा डस्टबिन में डालो!",
+    area: "",
+    options: [],
+    answer: "bin",
+    hint: "कचरे को पकड़कर डस्टबिन तक ले जाओ।",
+    success: "♻️ बहुत बढ़िया! कचरा सही जगह पहुँच गया!"
+  },
+
+  {
+    type: "choice",
+    question: "☀️ सूरज को 'नीचे' कैसे करोगे?",
     area: "☀️ 🌅",
     options: [
-      "सूरज को खींचकर नीचे लाओ",
-      "फोन की brightness कम करो",
+      "सूरज को खींचो",
+      "फोन की Brightness कम करो",
       "सूरज पर पानी डालो",
       "पेड़ काट दो"
     ],
     answer: 1,
-    hint: "सूरज को छूना जरूरी नहीं।",
-    success: "😂 शानदार! Brightness कम करके सूरज को 'नीचे' कर दिया!"
+    hint: "सूरज को छूने की जरूरत नहीं है।",
+    success: "😂 कमाल! Brightness कम करके सूरज को नीचे कर दिया!"
   },
 
   {
-    question: "🐟 मछली पानी के बाहर है। उसे बचाओ!",
-    area: "🐟 💧",
-    options: [
-      "मछली को पानी में डालो",
-      "पानी फेंक दो",
-      "मछली को छोड़ दो",
-      "स्क्रीन बंद करो"
-    ],
-    answer: 0,
-    hint: "मछली को पानी चाहिए।",
-    success: "🐟 बच गई! बहुत बढ़िया!"
+    type: "tap",
+    question: "🎯 सिर्फ लाल गेंद को दबाओ!",
+    area: "🔵   🟢   🔴   🟡",
+    options: [],
+    answer: "red",
+    hint: "सिर्फ लाल गेंद को दबाना है।",
+    success: "🎯 बिल्कुल सही!"
   },
 
   {
-    question: "🧠 आखिरी सवाल: सबसे पहले इस Level को कैसे जीतोगे?",
+    type: "drag",
+    question: "🔑 चाबी को ताले तक पहुँचाओ!",
+    area: "",
+    options: [],
+    answer: "key",
+    hint: "चाबी को पकड़कर ताले पर ले जाओ।",
+    success: "🔓 दरवाजा खुल गया!"
+  },
+
+  {
+    type: "choice",
+    question: "🧠 सबसे पहले क्या करना चाहिए?",
     area: "🤔 ❓ 🧠",
     options: [
-      "जल्दी से कोई भी जवाब दबाओ",
-      "सवाल को ध्यान से पढ़ो",
+      "कोई भी जवाब दबाओ",
+      "सवाल ध्यान से पढ़ो",
       "फोन बंद करो",
-      "गेम uninstall करो"
+      "गेम छोड़ दो"
     ],
     answer: 1,
     hint: "Tricky game में सबसे जरूरी चीज क्या है?",
-    success: "🏆 बिल्कुल! सवाल को ध्यान से पढ़ना ही असली Trick है!"
+    success: "🏆 शानदार! ध्यान से सोचना ही असली Trick है!"
   }
-
 ];
 
 
@@ -280,8 +248,7 @@ function renderLevels(){
 
     else{
 
-      button.innerText =
-        "🔒";
+      button.innerText = "🔒";
 
     }
 
@@ -354,43 +321,69 @@ function startLevel(level){
     currentPuzzle.question;
 
 
-  document.getElementById(
-    "puzzleArea"
-  ).innerText =
-    currentPuzzle.area;
-
+  const area =
+    document.getElementById("puzzleArea");
 
   const options =
     document.getElementById("options");
 
+
+  area.innerHTML = "";
+
   options.innerHTML = "";
 
 
-  currentPuzzle.options.forEach(
-    (option,index)=>{
+  if(currentPuzzle.type === "choice"){
 
-      const button =
-        document.createElement("button");
-
-      button.className =
-        "option-btn";
-
-      button.innerText =
-        option;
+    area.innerText =
+      currentPuzzle.area;
 
 
-      button.onclick =
-        function(){
+    currentPuzzle.options.forEach(
+      (option,index)=>{
 
-          checkAnswer(index);
+        const button =
+          document.createElement("button");
 
-        };
+        button.className =
+          "option-btn";
+
+        button.innerText =
+          option;
+
+        button.onclick =
+          function(){
+
+            checkAnswer(index);
+
+          };
+
+        options.appendChild(button);
+
+      }
+    );
+
+  }
 
 
-      options.appendChild(button);
+  if(currentPuzzle.type === "drag"){
 
-    }
-  );
+    createDragPuzzle(
+      currentLevel,
+      area
+    );
+
+  }
+
+
+  if(currentPuzzle.type === "tap"){
+
+    createTapPuzzle(
+      currentLevel,
+      area
+    );
+
+  }
 
 
   document.getElementById(
@@ -404,13 +397,347 @@ function startLevel(level){
 }
 
 
+function createDragPuzzle(level,area){
+
+  area.style.position =
+    "relative";
+
+  area.style.minHeight =
+    "180px";
+
+
+  let item = "";
+  let target = "";
+
+
+  if(level === 2){
+
+    item = "🥛";
+    target = "🐱";
+
+  }
+
+  else if(level === 6){
+
+    item = "🗑️";
+    target = "🗑️";
+
+  }
+
+  else if(level === 9){
+
+    item = "🔑";
+    target = "🔒";
+
+  }
+
+
+  const draggable =
+    document.createElement("div");
+
+  draggable.innerText = item;
+
+  draggable.style.position =
+    "absolute";
+
+  draggable.style.left =
+    "25px";
+
+  draggable.style.top =
+    "55px";
+
+  draggable.style.fontSize =
+    "55px";
+
+  draggable.style.cursor =
+    "grab";
+
+  draggable.draggable = true;
+
+
+  const dropZone =
+    document.createElement("div");
+
+  dropZone.innerText = target;
+
+  dropZone.style.position =
+    "absolute";
+
+  dropZone.style.right =
+    "25px";
+
+  dropZone.style.top =
+    "55px";
+
+  dropZone.style.fontSize =
+    "55px";
+
+  dropZone.style.padding =
+    "10px";
+
+
+  area.appendChild(draggable);
+  area.appendChild(dropZone);
+
+
+  draggable.addEventListener(
+    "dragstart",
+    function(event){
+
+      event.dataTransfer.setData(
+        "text/plain",
+        "drag-item"
+      );
+
+    }
+  );
+
+
+  dropZone.addEventListener(
+    "dragover",
+    function(event){
+
+      event.preventDefault();
+
+    }
+  );
+
+
+  dropZone.addEventListener(
+    "drop",
+    function(event){
+
+      event.preventDefault();
+
+      completeLevel();
+
+    }
+  );
+
+
+  // Mobile touch support
+
+  let dragging = false;
+
+
+  draggable.addEventListener(
+    "touchstart",
+    function(){
+
+      dragging = true;
+
+      draggable.style.transform =
+        "scale(1.2)";
+
+    }
+  );
+
+
+  document.addEventListener(
+    "touchmove",
+    function(event){
+
+      if(!dragging)
+        return;
+
+
+      const touch =
+        event.touches[0];
+
+      const rect =
+        area.getBoundingClientRect();
+
+
+      draggable.style.left =
+        (
+          touch.clientX -
+          rect.left -
+          25
+        ) + "px";
+
+
+      draggable.style.top =
+        (
+          touch.clientY -
+          rect.top -
+          25
+        ) + "px";
+
+    },
+    {passive:false}
+  );
+
+
+  document.addEventListener(
+    "touchend",
+    function(){
+
+      if(!dragging)
+        return;
+
+      dragging = false;
+
+      draggable.style.transform =
+        "scale(1)";
+
+
+      const a =
+        draggable.getBoundingClientRect();
+
+      const b =
+        dropZone.getBoundingClientRect();
+
+
+      const hit =
+        a.left < b.right &&
+        a.right > b.left &&
+        a.top < b.bottom &&
+        a.bottom > b.top;
+
+
+      if(hit){
+
+        completeLevel();
+
+      }
+
+    }
+  );
+
+}
+
+
+function createTapPuzzle(level,area){
+
+  area.style.position =
+    "relative";
+
+  area.style.minHeight =
+    "180px";
+
+
+  if(level === 4){
+
+    const tree =
+      document.createElement("div");
+
+    tree.innerText =
+      "🌳     🌳     🌳";
+
+    tree.style.fontSize =
+      "55px";
+
+    tree.style.position =
+      "absolute";
+
+    tree.style.top =
+      "35px";
+
+    tree.style.left =
+      "10px";
+
+    area.appendChild(tree);
+
+
+    const star =
+      document.createElement("button");
+
+    star.innerText =
+      "⭐";
+
+    star.style.position =
+      "absolute";
+
+    star.style.right =
+      "15px";
+
+    star.style.bottom =
+      "15px";
+
+    star.style.fontSize =
+      "20px";
+
+    star.style.border =
+      "0";
+
+    star.style.background =
+      "transparent";
+
+    star.style.opacity =
+      "0.25";
+
+    star.onclick =
+      function(){
+
+        completeLevel();
+
+      };
+
+
+    area.appendChild(star);
+
+  }
+
+
+  if(level === 8){
+
+    const balls =
+      ["🔵","🟢","🔴","🟡"];
+
+
+    balls.forEach(ball=>{
+
+      const button =
+        document.createElement("button");
+
+      button.innerText = ball;
+
+      button.style.border =
+        "0";
+
+      button.style.background =
+        "transparent";
+
+      button.style.fontSize =
+        "45px";
+
+      button.style.margin =
+        "5px";
+
+
+      button.onclick =
+        function(){
+
+          if(ball === "🔴"){
+
+            completeLevel();
+
+          }
+
+          else{
+
+            wrongAnswer();
+
+          }
+
+        };
+
+
+      area.appendChild(button);
+
+    });
+
+  }
+
+}
+
+
 function checkAnswer(selected){
 
-  if(!currentPuzzle)
-    return;
-
-
-  if(selected === currentPuzzle.answer){
+  if(
+    selected ===
+    currentPuzzle.answer
+  ){
 
     completeLevel();
 
@@ -418,31 +745,38 @@ function checkAnswer(selected){
 
   else{
 
-    gameData.lives--;
+    wrongAnswer();
 
-    updateTop();
+  }
 
-    saveGame();
-
-
-    document.getElementById(
-      "gameMessage"
-    ).innerText =
-      "❌ गलत! एक Life कम हो गई।";
+}
 
 
-    if(gameData.lives <= 0){
+function wrongAnswer(){
 
-      setTimeout(
-        function(){
+  gameData.lives--;
 
-          showScreen("gameover");
+  updateTop();
 
-        },
-        600
-      );
+  saveGame();
 
-    }
+
+  document.getElementById(
+    "gameMessage"
+  ).innerText =
+    "❌ गलत जवाब! एक Life कम हो गई।";
+
+
+  if(gameData.lives <= 0){
+
+    setTimeout(
+      function(){
+
+        showScreen("gameover");
+
+      },
+      700
+    );
 
   }
 
@@ -529,6 +863,10 @@ function nextLevel(){
 
 function useHint(){
 
+  if(!currentPuzzle)
+    return;
+
+
   if(hintUsed){
 
     document.getElementById(
@@ -601,7 +939,9 @@ function skipLevel(){
   setTimeout(
     function(){
 
-      if(currentLevel < puzzles.length){
+      if(
+        currentLevel < puzzles.length
+      ){
 
         startLevel(
           currentLevel + 1
@@ -625,31 +965,6 @@ function restoreLives(){
   updateTop();
 
   showScreen("levels");
-
-}
-
-
-function resetGame(){
-
-  const ok =
-    confirm(
-      "पूरा Game Reset करना है?"
-    );
-
-
-  if(!ok)
-    return;
-
-
-  gameData =
-    {...defaultGame};
-
-
-  saveGame();
-
-  updateTop();
-
-  showScreen("home");
 
 }
 
