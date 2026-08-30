@@ -1048,33 +1048,31 @@ function wrongAnswer(){
 
   const card = document.querySelector(".game-card");
 
-if (card) {
+  if (card) {
 
-  card.classList.remove("wrong-shake");
+    card.classList.remove("wrong-shake");
 
-  void card.offsetWidth;
+    void card.offsetWidth;
 
-  card.classList.add("wrong-shake");
+    card.classList.add("wrong-shake");
 
-}
-  
+  }
+
   // 🔊 Funny wrong-answer sound
   gameSound("wrong");
 
-  // ❌ Life कम
+  // ❤️ Life कम
   gameData.lives--;
 
   updateTop();
   saveGame();
 
-  // 😄 Better message
-  document.getElementById(
-    "gameMessage"
-  ).innerText =
+  // 😄 Message
+  document.getElementById("gameMessage").innerText =
     "😄 ओहो! गलत जवाब... फिर से सोचो!";
 
-  // ❤️ Lives खत्म
-  if(gameData.lives <= 0){
+  // 💔 Lives खत्म
+  if (gameData.lives <= 0) {
 
     setTimeout(
       () => showScreen("gameover"),
