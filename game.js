@@ -257,23 +257,7 @@ const puzzles = [
     success:"🏆 LEVEL 20 COMPLETE! तुम सच में कर सकते हो!"
   }
 
-  // ---------- LEVEL 21 ----------
-  {
-    type:"missing",
-    question:"👀 तस्वीर को ध्यान से देखो — क्या गायब है?",
-    area:"",
-    options:[
-      "🐱 बिल्ली",
-      "🐶 कुत्ता",
-      "🌳 पेड़",
-      "🌸 फूल"
-    ],
-    answer:0,
-    hint:"जानवरों को ध्यान से देखो।",
-    success:"🎉 बिल्कुल सही! बिल्ली गायब थी!"
-  }
-
-];
+ ];
 
 // ===============================
 // GAME DATA
@@ -574,16 +558,6 @@ function startLevel(level){
 
   }
 
-if(currentPuzzle.type==="missing"){
-
-  createMissingPuzzle(
-    currentLevel,
-    area,
-    options
-  );
-
-}
-  
   document.getElementById(
     "gameMessage"
   ).innerText=
@@ -1038,74 +1012,6 @@ function createTapPuzzle(level,area){
   }
 
 }
-
-
-// ===============================
-// MISSING OBJECT PUZZLES
-// ===============================
-
-function createMissingPuzzle(level,area,options){
-
-  area.style.position="relative";
-  area.style.minHeight="240px";
-
-  // 2D scene
-  area.innerHTML = `
-    <div style="
-      width:100%;
-      height:220px;
-      border-radius:20px;
-      background:linear-gradient(#bde7ff 0 60%,#8bd17c 60%);
-      position:relative;
-      overflow:hidden;
-      display:flex;
-      align-items:flex-end;
-      justify-content:space-around;
-      padding-bottom:20px;
-      box-sizing:border-box;
-      font-size:48px;
-    ">
-      <span>🌳</span>
-      <span>🏠</span>
-      <span>🌸</span>
-      <span>🐶</span>
-      <span>🦋</span>
-    </div>
-  `;
-
-  // Options
-  options.forEach((option,index)=>{
-
-    const button =
-      document.createElement("button");
-
-    button.className="option-btn";
-
-    button.innerText=option;
-
-    button.onclick=()=>{
-
-      if(index===currentPuzzle.answer){
-
-        completeLevel();
-
-      }
-      else{
-
-        wrongAnswer();
-
-      }
-
-    };
-
-    document
-      .getElementById("options")
-      .appendChild(button);
-
-  });
-
-}
-
 
 // ===============================
 // ANSWER
