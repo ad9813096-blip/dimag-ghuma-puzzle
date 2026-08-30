@@ -1046,6 +1046,18 @@ function checkAnswer(selected){
 
 function wrongAnswer(){
 
+  const card = document.querySelector(".game-card");
+
+if (card) {
+
+  card.classList.remove("wrong-shake");
+
+  void card.offsetWidth;
+
+  card.classList.add("wrong-shake");
+
+}
+  
   // 🔊 Funny wrong-answer sound
   gameSound("wrong");
 
