@@ -666,3 +666,39 @@ button {
   }
 
 }
+
+/* =========================
+   WRONG ANSWER SHAKE
+========================= */
+
+.wrong-shake {
+  animation: wrongShake 0.45s ease;
+}
+
+@keyframes wrongShake {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-12px);
+  }
+
+  40% {
+    transform: translateX(12px);
+  }
+
+  60% {
+    transform: translateX(-9px);
+  }
+
+  80% {
+    transform: translateX(9px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
