@@ -1081,8 +1081,12 @@ function completeLevel(){
 
   showVictoryCelebration();
   
-  gameSound("win");
-  gameVibrate([100,50,100]);
+  const winSound = document.getElementById("winSound");
+
+ if (winSound) {
+  winSound.currentTime = 0;
+  winSound.play().catch(() => {});
+}
   
   const alreadyCompleted =
     gameData.completed.includes(currentLevel);
