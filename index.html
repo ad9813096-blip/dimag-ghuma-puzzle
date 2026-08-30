@@ -12,6 +12,81 @@
 
 <body>
 
+<!-- Game Sound System -->
+<script>
+const audioCtx =
+  new (window.AudioContext || window.webkitAudioContext)();
+
+function gameSound(type) {
+
+  if (audioCtx.state === "suspended") {
+    audioCtx.resume();
+  }
+
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+
+  let frequency = 500;
+  let duration = 0.12;
+
+  if (type === "correct") {
+    frequency = 700;
+    duration = 0.18;
+  }
+
+  if (type === "wrong") {
+    frequency = 180;
+    duration = 0.25;
+  }
+
+  if (type === "coin") {
+    frequency = 900;
+    duration = 0.12;
+  }
+
+  if (type === "win") {
+    frequency = 800;
+    duration = 0.35;
+  }
+
+  osc.frequency.value = frequency;
+  osc.type = "sine";
+
+  gain.gain.setValueAtTime(
+    0.001,
+    audioCtx.currentTime
+  );
+
+  gain.gain.exponentialRampToValueAtTime(
+    0.18,
+    audioCtx.currentTime + 0.02
+  );
+
+  gain.gain.exponentialRampToValueAtTime(
+    0.001,
+    audioCtx.currentTime + duration
+  );
+
+  osc.start();
+
+  osc.stop(
+    audioCtx.currentTime + duration
+  );
+}
+
+
+function gameVibrate(pattern) {
+
+  if ("vibrate" in navigator) {
+    navigator.vibrate(pattern);
+  }
+
+}
+</script>
+  
 <div class="app">
 
   <header class="topbar">
