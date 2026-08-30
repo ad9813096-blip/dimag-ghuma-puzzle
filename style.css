@@ -610,5 +610,59 @@ button {
       scale(1);
     opacity: 0;
   }
+  
+}
+
+/* =========================
+   BIG PUZZLE OBJECTS
+========================= */
+
+#puzzleArea {
+  min-height: 240px;
+  position: relative;
+  font-size: 32px;
+}
+
+/* Puzzle में सीधे दिखने वाले emoji/text */
+#puzzleArea > div {
+  font-size: 65px !important;
+}
+
+/* Drag & Drop objects */
+#puzzleArea [draggable="true"] {
+  font-size: 75px !important;
+  min-width: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Target object */
+#puzzleArea button {
+  font-size: 55px !important;
+}
+
+/* Hidden object puzzles */
+#hiddenStar {
+  font-size: 35px !important;
+  min-width: 55px;
+  min-height: 55px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  #puzzleArea {
+    min-height: 260px;
+  }
+
+  #puzzleArea > div {
+    font-size: 72px !important;
+  }
+
+  #puzzleArea [draggable="true"] {
+    font-size: 82px !important;
+  }
 
 }
