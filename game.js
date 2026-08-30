@@ -1058,8 +1058,13 @@ function wrongAnswer(){
 
   }
 
-  // 🔊 Funny wrong-answer sound
-  gameSound("wrong");
+    const wrongSound =
+    document.getElementById("wrongSound");
+
+  if (wrongSound) {
+    wrongSound.currentTime = 0;
+    wrongSound.play().catch(() => {});
+  }
 
   // ❤️ Life कम
   gameData.lives--;
