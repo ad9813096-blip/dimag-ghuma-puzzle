@@ -1038,49 +1038,103 @@ function createTapPuzzle(level,area){
 }
 
 // ===============================
-// MISSING OBJECT PUZZLE
+// LEVEL 21 - MISSING OBJECT PUZZLE
 // ===============================
 
-function createMissingPuzzle(level,area,options){
+function createMissingPuzzle(level, area, options){
 
-  area.style.position="relative";
-  area.style.minHeight="240px";
+  area.style.position = "relative";
+  area.style.minHeight = "240px";
 
+  // 🧠 2D Puzzle Scene
   area.innerHTML = `
     <div style="
       width:100%;
       height:220px;
       border-radius:20px;
-      background:linear-gradient(#bde7ff 0 60%,#8bd17c 60%);
+      background:linear-gradient(#bde7ff 0 60%, #8bd17c 60%);
       position:relative;
       overflow:hidden;
-      display:flex;
-      align-items:flex-end;
-      justify-content:space-around;
-      padding-bottom:20px;
       box-sizing:border-box;
-      font-size:48px;
     ">
-      <span>🌳</span>
-      <span>🏠</span>
-      <span>🌸</span>
-      <span>🐶</span>
-      <span>🦋</span>
+
+      <!-- ☀️ Sun -->
+      <div style="
+        position:absolute;
+        top:12px;
+        right:20px;
+        font-size:42px;
+      ">☀️</div>
+
+      <!-- 🌳 Trees -->
+      <div style="
+        position:absolute;
+        left:20px;
+        bottom:18px;
+        font-size:52px;
+      ">🌳</div>
+
+      <div style="
+        position:absolute;
+        left:85px;
+        bottom:18px;
+        font-size:45px;
+      ">🌳</div>
+
+      <!-- 🏠 House -->
+      <div style="
+        position:absolute;
+        left:42%;
+        bottom:20px;
+        font-size:55px;
+      ">🏠</div>
+
+      <!-- 🌸 Flower -->
+      <div style="
+        position:absolute;
+        right:85px;
+        bottom:22px;
+        font-size:40px;
+      ">🌸</div>
+
+      <!-- 🐶 Dog -->
+      <div style="
+        position:absolute;
+        right:20px;
+        bottom:18px;
+        font-size:48px;
+      ">🐶</div>
+
+      <!-- 🦋 Butterfly -->
+      <div style="
+        position:absolute;
+        left:48%;
+        top:55px;
+        font-size:32px;
+      ">🦋</div>
+
     </div>
   `;
+
+
+  // ===============================
+  // ANSWER OPTIONS
+  // ===============================
+
+  options.innerHTML = "";
 
   options.forEach((option,index)=>{
 
     const button =
       document.createElement("button");
 
-    button.className="option-btn";
+    button.className = "option-btn";
 
-    button.innerText=option;
+    button.innerText = option;
 
-    button.onclick=()=>{
+    button.onclick = ()=>{
 
-      if(index===currentPuzzle.answer){
+      if(index === currentPuzzle.answer){
 
         completeLevel();
 
@@ -1093,35 +1147,9 @@ function createMissingPuzzle(level,area,options){
 
     };
 
-    document
-      .getElementById("options")
-      .appendChild(button);
+    options.appendChild(button);
 
   });
-
-}
-
-
-// ===============================
-// ANSWER
-// ===============================
-
-function checkAnswer(selected){
-
-  if(
-    selected===
-    currentPuzzle.answer
-  ){
-
-    completeLevel();
-
-  }
-
-  else{
-
-    wrongAnswer();
-
-  }
 
 }
 
