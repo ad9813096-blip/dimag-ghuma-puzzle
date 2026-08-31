@@ -1419,6 +1419,11 @@ function resetGame(){
 // ===============================
 // START
 // ===============================
+// TEST: Unlock Level 21
+if(gameData.completed.includes(20)){
+  gameData.unlocked = Math.max(gameData.unlocked, 21);
+  saveGame();
+}
 
 document.addEventListener(
   "DOMContentLoaded",
