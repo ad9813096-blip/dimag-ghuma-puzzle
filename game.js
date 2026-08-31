@@ -1023,6 +1023,71 @@ function createTapPuzzle(level,area){
 }
 
 // ===============================
+// MISSING OBJECT PUZZLE
+// ===============================
+
+function createMissingPuzzle(level,area,options){
+
+  area.style.position="relative";
+  area.style.minHeight="240px";
+
+  area.innerHTML = `
+    <div style="
+      width:100%;
+      height:220px;
+      border-radius:20px;
+      background:linear-gradient(#bde7ff 0 60%,#8bd17c 60%);
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-around;
+      padding-bottom:20px;
+      box-sizing:border-box;
+      font-size:48px;
+    ">
+      <span>🌳</span>
+      <span>🏠</span>
+      <span>🌸</span>
+      <span>🐶</span>
+      <span>🦋</span>
+    </div>
+  `;
+
+  options.forEach((option,index)=>{
+
+    const button =
+      document.createElement("button");
+
+    button.className="option-btn";
+
+    button.innerText=option;
+
+    button.onclick=()=>{
+
+      if(index===currentPuzzle.answer){
+
+        completeLevel();
+
+      }
+      else{
+
+        wrongAnswer();
+
+      }
+
+    };
+
+    document
+      .getElementById("options")
+      .appendChild(button);
+
+  });
+
+}
+
+
+// ===============================
 // ANSWER
 // ===============================
 
