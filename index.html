@@ -132,9 +132,9 @@ function gameVibrate(pattern) {
   </div>
 
   <button
-    class="main-btn"
-    onclick="showScreen('levels')">
-    ▶️ खेल शुरू करें
+  class="main-btn"
+  onclick="showScreen('categories')">
+  ▶️ खेल शुरू करें
   </button>
 
   <button
@@ -149,6 +149,52 @@ function gameVibrate(pattern) {
 
 </section>
 
+  <!-- CATEGORIES -->
+
+<section id="categories" class="screen">
+
+  <h2>🎮 Category चुनो</h2>
+
+  <p class="small">
+    अपनी पसंद की Difficulty चुनो।
+  </p>
+
+  <div class="category-grid">
+
+    <button
+      class="category-btn easy"
+      onclick="showScreen('levels')">
+      🟢
+      <strong> EASY</strong>
+      <span>50 Levels</span>
+    </button>
+
+    <button
+      class="category-btn medium"
+      onclick="showScreen('mediumLevels')">
+      🟡
+      <strong> MEDIUM</strong>
+      <span>50 Levels</span>
+    </button>
+
+    <button
+      class="category-btn hard"
+      onclick="showScreen('hardLevels')">
+      🔴
+      <strong> HARD</strong>
+      <span>🔒 Locked</span>
+    </button>
+
+  </div>
+
+  <button
+    class="back-btn"
+    onclick="showScreen('home')">
+    ← वापस
+  </button>
+
+</section>
+  
   <!-- LEVELS -->
 
   <section id="levels" class="screen">
