@@ -825,3 +825,188 @@ button {
     0 1px 0 rgba(0,0,0,.15);
 }
 
+/* ===============================
+   HOW TO PLAY - PREMIUM
+=============================== */
+
+#howto {
+  justify-content: flex-start;
+  text-align: center;
+  padding: 25px 16px 30px;
+  overflow-y: auto;
+}
+
+#howto .card {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 25px 20px;
+  margin-top: 10px;
+
+  border-radius: 25px;
+
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.30);
+
+  backdrop-filter: blur(15px);
+
+  color: #ffffff;
+}
+
+#howto .card h2 {
+  margin: 0 0 22px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+#howto .card p {
+  margin: 14px 0;
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 600;
+  opacity: 1;
+}
+
+#howto .card hr {
+  border: 0;
+  height: 1px;
+  margin: 22px 0;
+
+  background: rgba(255,255,255,.25);
+}
+
+#howto .back-btn {
+  max-width: 600px;
+  margin-top: 18px;
+}
+
+
+/* ===============================
+   BIG COINS & LIVES
+=============================== */
+
+.home-stats {
+  gap: 18px;
+  margin: 12px 0 25px;
+}
+
+.home-stats .stat {
+  min-width: 125px;
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+
+  border-radius: 18px;
+
+  font-size: 23px;
+  font-weight: 900;
+
+  background: rgba(255,255,255,.15);
+
+  border: 1px solid rgba(255,255,255,.20);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.18);
+}
+
+.home-stats .stat span {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+
+/* ===============================
+   BIGGER HOME TEXT
+=============================== */
+
+.intro {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.game-name {
+  font-size: 20px;
+}
+
+.home-footer {
+  font-size: 15px;
+}
+
+
+/* ===============================
+   BIGGER LEVEL SCREEN TEXT
+=============================== */
+
+#levels h2 {
+  font-size: 32px;
+}
+
+#levels .small {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+/* ===============================
+   BIGGER BACK BUTTON
+=============================== */
+
+.back-btn {
+  min-height: 58px;
+  margin-top: 20px;
+
+  font-size: 19px;
+  font-weight: 900;
+
+  border-radius: 18px;
+}
+
+
+/* ===============================
+   MOBILE
+=============================== */
+
+@media (max-width:480px) {
+
+  #howto {
+    padding: 20px 14px 25px;
+  }
+
+  #howto .card {
+    padding: 22px 17px;
+  }
+
+  #howto .card h2 {
+    font-size: 28px;
+  }
+
+  #howto .card p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .home-stats {
+    gap: 10px;
+  }
+
+  .home-stats .stat {
+    min-width: 120px;
+    min-height: 58px;
+    font-size: 21px;
+  }
+
+  .home-stats .stat span {
+    font-size: 23px;
+  }
+
+}
+
