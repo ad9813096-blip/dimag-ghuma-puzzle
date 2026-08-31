@@ -557,7 +557,16 @@ function startLevel(level){
     );
 
   }
+  if(currentPuzzle.type==="missing"){
 
+    createMissingPuzzle(
+     currentLevel,
+     area,
+     options
+   );
+
+  }
+  
   document.getElementById(
     "gameMessage"
   ).innerText=
