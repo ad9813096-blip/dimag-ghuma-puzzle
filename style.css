@@ -702,3 +702,126 @@ button {
   }
 
 }
+
+/* ===============================
+   PREMIUM CATEGORY BUTTONS
+   =============================== */
+
+.category-grid{
+  display:grid;
+  gap:16px;
+  margin:25px 0;
+}
+
+.category-btn{
+  width:100%;
+  min-height:90px;
+  border:none;
+  border-radius:22px;
+  padding:15px 20px;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  font-size:20px;
+  font-weight:800;
+
+  cursor:pointer;
+
+  box-shadow:
+    0 7px 0 rgba(0,0,0,.15),
+    0 12px 25px rgba(0,0,0,.12);
+
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease;
+}
+
+.category-btn span{
+  display:block;
+  margin-left:auto;
+  font-size:14px;
+  font-weight:600;
+  opacity:.8;
+}
+
+.category-btn:active{
+  transform:translateY(6px);
+  box-shadow:
+    0 2px 0 rgba(0,0,0,.15);
+}
+
+/* EASY */
+
+.category-btn.easy{
+  background:linear-gradient(
+    135deg,
+    #8cff9a,
+    #35d66f
+  );
+}
+
+/* MEDIUM */
+
+.category-btn.medium{
+  background:linear-gradient(
+    135deg,
+    #ffe98a,
+    #ffb52e
+  );
+}
+
+/* HARD */
+
+.category-btn.hard{
+  background:linear-gradient(
+    135deg,
+    #ff9a9a,
+    #ef5350
+  );
+  opacity:.75;
+  cursor:not-allowed;
+}
+
+
+/* ===============================
+   PREMIUM BACK BUTTON
+   =============================== */
+
+.back-btn{
+  width:100%;
+  min-height:52px;
+
+  border:none;
+  border-radius:16px;
+
+  background:linear-gradient(
+    135deg,
+    #ffffff,
+    #eeeeee
+  );
+
+  color:#333;
+
+  font-size:17px;
+  font-weight:800;
+
+  box-shadow:
+    0 5px 0 rgba(0,0,0,.15),
+    0 8px 18px rgba(0,0,0,.10);
+
+  cursor:pointer;
+
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease;
+}
+
+.back-btn:active{
+  transform:translateY(5px);
+
+  box-shadow:
+    0 1px 0 rgba(0,0,0,.15);
+}
+
