@@ -1046,7 +1046,7 @@ function createMissingPuzzle(level, area, options){
   area.style.position = "relative";
   area.style.minHeight = "240px";
 
-  // 🧠 2D Puzzle Scene
+  // 🧠 Puzzle Picture
   area.innerHTML = `
     <div style="
       width:100%;
@@ -1058,15 +1058,13 @@ function createMissingPuzzle(level, area, options){
       box-sizing:border-box;
     ">
 
-      <!-- ☀️ Sun -->
       <div style="
         position:absolute;
-        top:12px;
+        top:10px;
         right:20px;
         font-size:42px;
       ">☀️</div>
 
-      <!-- 🌳 Trees -->
       <div style="
         position:absolute;
         left:20px;
@@ -1081,7 +1079,6 @@ function createMissingPuzzle(level, area, options){
         font-size:45px;
       ">🌳</div>
 
-      <!-- 🏠 House -->
       <div style="
         position:absolute;
         left:42%;
@@ -1089,7 +1086,6 @@ function createMissingPuzzle(level, area, options){
         font-size:55px;
       ">🏠</div>
 
-      <!-- 🌸 Flower -->
       <div style="
         position:absolute;
         right:85px;
@@ -1097,7 +1093,6 @@ function createMissingPuzzle(level, area, options){
         font-size:40px;
       ">🌸</div>
 
-      <!-- 🐶 Dog -->
       <div style="
         position:absolute;
         right:20px;
@@ -1105,7 +1100,6 @@ function createMissingPuzzle(level, area, options){
         font-size:48px;
       ">🐶</div>
 
-      <!-- 🦋 Butterfly -->
       <div style="
         position:absolute;
         left:48%;
@@ -1123,7 +1117,7 @@ function createMissingPuzzle(level, area, options){
 
   options.innerHTML = "";
 
-  options.forEach((option,index)=>{
+  currentPuzzle.options.forEach((option,index)=>{
 
     const button =
       document.createElement("button");
@@ -1132,7 +1126,7 @@ function createMissingPuzzle(level, area, options){
 
     button.innerText = option;
 
-    button.onclick = ()=>{
+    button.onclick = function(){
 
       if(index === currentPuzzle.answer){
 
