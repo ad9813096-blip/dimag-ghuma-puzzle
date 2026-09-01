@@ -2917,3 +2917,41 @@ document.addEventListener(
 
   }
 );
+
+// ===============================
+// BACKGROUND MUSIC
+// ===============================
+
+const backgroundMusic =
+  document.getElementById("backgroundMusic");
+
+function startBackgroundMusic() {
+
+  if (!backgroundMusic)
+    return;
+
+  backgroundMusic.volume = 0.12;
+
+  backgroundMusic.play().catch(() => {
+    // Browser autoplay को रोक सकता है
+  });
+
+}
+
+
+// Game में पहली user click/touch पर music शुरू
+document.addEventListener(
+  "click",
+  function startMusicOnce() {
+
+    startBackgroundMusic();
+
+    document.removeEventListener(
+      "click",
+      startMusicOnce
+    );
+
+  },
+  { once: true }
+);
+
