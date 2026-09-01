@@ -5,53 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#6c4ab6">
 
-  <title>तुम कर सकते हो? – Tricky Puzzles</title>
+  <title>तुम कर सकते हो? – Tricky Puzzles V2.0</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
-  
+
 <body>
 
-  <audio id="backgroundMusic" loop preload="auto">
+<!-- ================= BACKGROUND MUSIC ================= -->
+
+<audio id="backgroundMusic" loop preload="auto">
   <source src="background.mp3" type="audio/mpeg">
 </audio>
-  
-<!-- Game Sound System -->
+
+
+<!-- ================= GAME SOUND SYSTEM ================= -->
+
 <script>
-const audioCtx =
-  new (window.AudioContext || window.webkitAudioContext)();
 
-function gameSound(type) {
+const AudioContextClass =
+  window.AudioContext ||
+  window.webkitAudioContext;
 
-  if (audioCtx.state === "suspended") {
-    audioCtx.resume();
+let audioCtx = null;
+
+function getAudioContext(){
+
+  if(!AudioContextClass)
+    return null;
+
+  if(!audioCtx)
+    audioCtx = new AudioContextClass();
+
+  return audioCtx;
+}
+
+
+function gameSound(type){
+
+  const ctx = getAudioContext();
+
+  if(!ctx)
+    return;
+
+  if(ctx.state === "suspended"){
+    ctx.resume().catch(function(){});
   }
 
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
+  const osc =
+    ctx.createOscillator();
+
+  const gain =
+    ctx.createGain();
 
   osc.connect(gain);
-  gain.connect(audioCtx.destination);
+  gain.connect(ctx.destination);
 
   let frequency = 500;
   let duration = 0.12;
 
-  if (type === "correct") {
+  if(type === "correct"){
     frequency = 700;
     duration = 0.18;
   }
 
-  if (type === "wrong") {
+  if(type === "wrong"){
     frequency = 180;
     duration = 0.25;
   }
 
-  if (type === "coin") {
+  if(type === "coin"){
     frequency = 900;
     duration = 0.12;
   }
 
-  if (type === "win") {
+  if(type === "win"){
     frequency = 800;
     duration = 0.35;
   }
@@ -61,37 +89,50 @@ function gameSound(type) {
 
   gain.gain.setValueAtTime(
     0.001,
-    audioCtx.currentTime
+    ctx.currentTime
   );
 
   gain.gain.exponentialRampToValueAtTime(
     0.18,
-    audioCtx.currentTime + 0.02
+    ctx.currentTime + 0.02
   );
 
   gain.gain.exponentialRampToValueAtTime(
     0.001,
-    audioCtx.currentTime + duration
+    ctx.currentTime + duration
   );
 
   osc.start();
 
   osc.stop(
-    audioCtx.currentTime + duration
+    ctx.currentTime + duration
   );
+
 }
 
 
-function gameVibrate(pattern) {
+function gameVibrate(pattern){
 
-  if ("vibrate" in navigator) {
-    navigator.vibrate(pattern);
+  if("vibrate" in navigator){
+
+    try{
+      navigator.vibrate(pattern);
+    }
+    catch(error){}
+
   }
 
 }
+
 </script>
-  
+
+
+<!-- ================= APP ================= -->
+
 <div class="app">
+
+
+  <!-- ================= TOP BAR ================= -->
 
   <header class="topbar">
 
@@ -100,140 +141,269 @@ function gameVibrate(pattern) {
     </div>
 
     <div class="top-stats">
-      🪙 <span id="coins">100</span>
-      ❤️ <span id="lives">5</span>
+
+      <span>
+        🪙 <span id="coins">100</span>
+      </span>
+
+      <span>
+        ❤️ <span id="lives">5</span>
+      </span>
+
     </div>
 
   </header>
 
 
-  <!-- HOME -->
+  <!-- ================= HOME ================= -->
 
-<section id="home" class="screen active">
+  <section id="home" class="screen active">
 
-  <div class="home-logo">
-    🧠
-  </div>
-
-  <div class="home-title">
-    <h1>तुम कर सकते हो?</h1>
-    <div class="game-name">TRICKY PUZZLES</div>
-  </div>
-
-  <p class="intro">
-    आसान दिखने वाली पहेलियों में<br>
-    छुपा है असली दिमागी खेल! 🧠
-  </p>
-
-  <div class="home-stats">
-    <div class="stat">
-      🪙 <span id="coins">100</span>
+    <div class="home-logo">
+      🧠
     </div>
 
-    <div class="stat">
-      ❤️ <span id="lives">5</span>
+    <div class="home-title">
+
+      <h1>
+        तुम कर सकते हो?
+      </h1>
+
+      <div class="game-name">
+        TRICKY PUZZLES
+      </div>
+
     </div>
-  </div>
 
-  <button
-  class="main-btn"
-  onclick="showScreen('categories')">
-  ▶️ खेल शुरू करें
-  </button>
-
-  <button
-    class="secondary-btn"
-    onclick="showScreen('howto')"
-    ❓ कैसे खेलें
-  </button>
-
-  <div class="home-footer">
-    🧩 सोचो • 🔍 ढूँढो • 🏆 जीतो
-  </div>
-
-</section>
-
-  <!-- CATEGORIES -->
-
-<section id="categories" class="screen">
-
-  <h2>🎮 Category चुनो</h2>
-
-  <p class="small">
-    अपनी पसंद की Difficulty चुनो।
-  </p>
-
-  <div class="category-grid">
-
-    <button
-      class="category-btn easy"
-      onclick="showScreen('levels')">
-      🟢
-      <strong> EASY</strong>
-      <span>50 Levels</span>
-    </button>
-
-    <button
-      class="category-btn medium"
-      onclick="showScreen('mediumLevels')">
-      🟡
-      <strong> MEDIUM</strong>
-      <span>50 Levels</span>
-    </button>
-
-    <button
-      class="category-btn hard"
-      onclick="showScreen('hardLevels')">
-      🔴
-      <strong> HARD</strong>
-      <span>🔒 Locked</span>
-    </button>
-
-  </div>
-
-  <button
-    class="back-btn"
-    onclick="showScreen('home')">
-    ← वापस
-  </button>
-
-</section>
-  
-  <!-- LEVELS -->
-
-  <section id="levels" class="screen">
-
-    <h2>🗺️ Level चुनो</h2>
-
-    <p class="small">
-      जितने Level पूरे करोगे, उतने नए Level खुलेंगे।
+    <p class="intro">
+      आसान दिखने वाली पहेलियों में<br>
+      छुपा है असली दिमागी खेल! 🧠
     </p>
 
-    <div id="levelGrid" class="level-grid"></div>
 
-    <button class="back-btn" onclick="showScreen('home')">
+    <div class="home-stats">
+
+      <div class="stat">
+        🪙 <span id="homeCoins">100</span>
+      </div>
+
+      <div class="stat">
+        ❤️ <span id="homeLives">5</span>
+      </div>
+
+    </div>
+
+
+    <button
+      class="main-btn"
+      onclick="showScreen('categories')">
+
+      ▶️ खेल शुरू करें
+
+    </button>
+
+
+    <button
+      class="secondary-btn"
+      onclick="showScreen('howto')">
+
+      ❓ कैसे खेलें
+
+    </button>
+
+
+    <div class="home-footer">
+
+      🧩 सोचो • 🔍 ढूँढो • 🏆 जीतो
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CATEGORIES ================= -->
+
+  <section id="categories" class="screen">
+
+    <h2>
+      🎮 Category चुनो
+    </h2>
+
+    <p class="small">
+      अपनी पसंद की Difficulty चुनो।
+    </p>
+
+
+    <div class="category-grid">
+
+      <button
+        class="category-btn easy"
+        onclick="showScreen('levels')">
+
+        🟢
+        <strong>EASY</strong>
+        <span>Levels 1–50</span>
+
+      </button>
+
+
+      <button
+        class="category-btn medium"
+        onclick="showScreen('mediumLevels')">
+
+        🟡
+        <strong>MEDIUM</strong>
+        <span>Levels 51–100</span>
+
+      </button>
+
+
+      <button
+        class="category-btn hard"
+        onclick="showScreen('hardLevels')">
+
+        🔴
+        <strong>HARD</strong>
+        <span>🔒 Coming Soon</span>
+
+      </button>
+
+    </div>
+
+
+    <button
+      class="back-btn"
+      onclick="showScreen('home')">
+
       ← वापस
+
     </button>
 
   </section>
 
 
-  <!-- GAME -->
+  <!-- ================= EASY LEVELS ================= -->
+
+  <section id="levels" class="screen">
+
+    <h2>
+      🟢 Easy Levels
+    </h2>
+
+    <p class="small">
+      Level पूरा करो और अगला Level unlock करो।
+    </p>
+
+    <div
+      id="levelGrid"
+      class="level-grid">
+    </div>
+
+
+    <button
+      class="back-btn"
+      onclick="showScreen('categories')">
+
+      ← वापस
+
+    </button>
+
+  </section>
+
+
+  <!-- ================= MEDIUM LEVELS ================= -->
+
+  <section id="mediumLevels" class="screen">
+
+    <h2>
+      🟡 Medium Levels
+    </h2>
+
+    <p class="small">
+      Level 51 से 100 तक के Tricky Puzzles।
+    </p>
+
+    <div
+      id="mediumLevelGrid"
+      class="level-grid">
+    </div>
+
+
+    <button
+      class="back-btn"
+      onclick="showScreen('categories')">
+
+      ← वापस
+
+    </button>
+
+  </section>
+
+
+  <!-- ================= HARD ================= -->
+
+  <section id="hardLevels" class="screen">
+
+    <div class="card">
+
+      <div class="result-icon">
+        🔒
+      </div>
+
+      <h2>
+        HARD MODE
+      </h2>
+
+      <p>
+        यह Mode अभी Locked है।
+      </p>
+
+      <p>
+        पहले 100 Levels पूरे करो! 🔥
+      </p>
+
+    </div>
+
+
+    <button
+      class="back-btn"
+      onclick="showScreen('categories')">
+
+      ← वापस
+
+    </button>
+
+  </section>
+
+
+  <!-- ================= GAME ================= -->
 
   <section id="game" class="screen">
 
     <div class="level-head">
 
-      <button class="mini-btn" onclick="showScreen('levels')">
+      <button
+        class="mini-btn"
+        onclick="goBackFromGame()">
+
         ←
+
       </button>
 
+
       <b>
-        Level <span id="currentLevel">1</span>
+        Level
+        <span id="currentLevel">
+          1
+        </span>
       </b>
 
+
       <span>
-        🪙 <span id="gameCoins">100</span>
+        🪙
+        <span id="gameCoins">
+          100
+        </span>
       </span>
 
     </div>
@@ -241,79 +411,131 @@ function gameVibrate(pattern) {
 
     <div class="question-card">
 
-      <div id="puzzleNumber" class="puzzle-number">
+      <div
+        id="puzzleNumber"
+        class="puzzle-number">
+
         Puzzle 1
+
       </div>
+
 
       <h2 id="question">
         सवाल यहाँ आएगा
       </h2>
 
-      <div id="puzzleArea" class="puzzle-area"></div>
 
-      <div id="options" class="options"></div>
+      <div
+        id="puzzleArea"
+        class="puzzle-area">
+      </div>
+
+
+      <div
+        id="options"
+        class="options">
+      </div>
 
     </div>
 
 
     <div class="game-actions">
 
-      <button class="hint-btn" onclick="useHint()">
+      <button
+        class="hint-btn"
+        onclick="useHint()">
+
         💡 Hint - 20 🪙
+
       </button>
 
-      <button class="skip-btn" onclick="skipLevel()">
+
+      <button
+        class="skip-btn"
+        onclick="skipLevel()">
+
         ⏭️ Skip - 30 🪙
+
       </button>
 
     </div>
 
 
-    <div id="gameMessage" class="game-message"></div>
+    <div
+      id="gameMessage"
+      class="game-message">
+    </div>
 
   </section>
 
 
-  <!-- HOW TO PLAY -->
+  <!-- ================= HOW TO PLAY ================= -->
 
-<section id="howto" class="screen">
+  <section id="howto" class="screen">
 
-  <div class="card">
+    <div class="card">
 
-    <h2>🧠 कैसे खेलें?</h2>
+      <h2>
+        🧠 कैसे खेलें?
+      </h2>
 
-    <p>🎯 हर Level में एक Puzzle मिलेगा।</p>
+      <p>
+        🎯 हर Level में एक Puzzle मिलेगा।
+      </p>
 
-    <p>👀 सवाल को ध्यान से पढ़ो और Trick ढूँढो।</p>
+      <p>
+        👀 सवाल को ध्यान से पढ़ो।
+      </p>
 
-    <p>👉 कभी सही जवाब चुनना होगा।</p>
+      <p>
+        👉 कभी सही जवाब चुनना होगा।
+      </p>
 
-    <p>👆 कभी किसी चीज़ पर Tap करना होगा।</p>
+      <p>
+        👆 कभी किसी चीज़ पर Tap करना होगा।
+      </p>
 
-    <p>🖐️ कभी किसी चीज़ को Drag करना होगा।</p>
+      <p>
+        🖐️ कभी किसी चीज़ को Drag करना होगा।
+      </p>
 
-    <p>🧠 कुछ Puzzles में थोड़ा अलग सोचने की जरूरत होगी।</p>
+      <p>
+        🧠 कुछ Puzzles में Trick छुपी होगी।
+      </p>
 
-    <hr>
+      <hr>
 
-    <p>💡 Hint लेने में 20 🪙 Coins लगेंगे।</p>
+      <p>
+        💡 Hint = 20 Coins
+      </p>
 
-    <p>⏭️ Skip करने में 30 🪙 Coins लगेंगे।</p>
+      <p>
+        ⏭️ Skip = 30 Coins
+      </p>
 
-    <p>❤️ गलत जवाब देने पर 1 Life कम होगी।</p>
+      <p>
+        ❤️ गलत जवाब = 1 Life कम
+      </p>
 
-  </div>
+      <p>
+        🪙 सही जवाब = +20 Coins
+      </p>
 
-  <button
-    class="back-btn"
-    onclick="showScreen('home')">
-    ← वापस
-  </button>
-
-</section>
+    </div>
 
 
-  <!-- RESULT -->
+    <button
+      class="back-btn"
+      onclick="showScreen('home')">
+
+      ← वापस
+
+    </button>
+
+  </section>
+
+
+  <!-- ================= RESULT ================= -->
 
   <section id="result" class="screen">
 
@@ -321,36 +543,47 @@ function gameVibrate(pattern) {
       🎉
     </div>
 
+
     <h1 id="resultTitle">
-      सही जवाब!
+      LEVEL COMPLETE!
     </h1>
+
 
     <p id="resultText">
       शानदार!
     </p>
 
-    <div class="reward">
-      🪙 +20 Coins
+
+    <div
+      id="resultReward"
+      class="reward">
+
+      ⭐⭐⭐ 🪙 +20 Coins
+
     </div>
+
 
     <button
       class="main-btn"
-      onclick="nextLevel()"
-    >
+      onclick="nextLevel()">
+
       ➡️ अगला Level
+
     </button>
+
 
     <button
       class="secondary-btn"
-      onclick="showScreen('levels')"
-    >
+      onclick="openCurrentMap()">
+
       🗺️ Level Map
+
     </button>
 
   </section>
 
 
-  <!-- GAME OVER -->
+  <!-- ================= GAME OVER ================= -->
 
   <section id="gameover" class="screen">
 
@@ -358,44 +591,71 @@ function gameVibrate(pattern) {
       😵
     </div>
 
-    <h1>Lives खत्म!</h1>
+
+    <h1>
+      Lives खत्म!
+    </h1>
+
 
     <p>
       कोई बात नहीं भाई! फिर से कोशिश करो। 💪
     </p>
 
+
     <button
       class="main-btn"
-      onclick="restoreLives()"
-    >
+      onclick="restoreLives()">
+
       ❤️ 5 Lives वापस
+
     </button>
+
 
     <button
       class="secondary-btn"
-      onclick="showScreen('levels')"
-    >
+      onclick="showScreen('categories')">
+
       🗺️ Level Map
+
     </button>
 
   </section>
 
 
+  <!-- ================= FOOTER ================= -->
+
   <footer>
-    तुम कर सकते हो? 🧠 – V1.0
+    तुम कर सकते हो? 🧠 – V2.0
   </footer>
 
 </div>
 
 
-<script src="game.js"></script>
-  
-<!-- Victory Celebration -->
-<div id="victoryCelebration"></div>
-  
-<audio id="winSound" src="win.mp3" preload="auto"></audio>
+<!-- ================= VICTORY ================= -->
 
-<audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>
+<div id="victoryCelebration"></div>
+
+
+<!-- ================= AUDIO ================= -->
+
+<audio
+  id="winSound"
+  src="win.mp3"
+  preload="auto">
+</audio>
+
+
+<audio
+  id="wrongSound"
+  src="wrong.mp3"
+  preload="auto">
+</audio>
+
+
+<!-- ================= GAME JS ================= -->
+
+<script src="game.js"></script>
+
 
 </body>
 </html>
