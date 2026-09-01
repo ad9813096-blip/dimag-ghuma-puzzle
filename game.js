@@ -1,7 +1,8 @@
 // ======================================================
-// TUM KAR SAKTE HO - TRICKY PUZZLES
-// COMPLETE GAME V1.0
-// LEVEL 1 - 50
+// TUM KAR SAKTE HO
+// TRICKY PUZZLES
+// COMPLETE GAME V2.0
+// LEVEL 1 - 100
 // ======================================================
 
 
@@ -642,15 +643,13 @@ const puzzles = [
     answer:2,
     hint:"Tricky Puzzle में सबसे ताकतवर चीज तुम्हारा दिमाग है।",
     success:"🏆🔥 LEVEL 50 COMPLETE! तुम सच में कर सकते हो!"
-  }
+  },
 
-  ];
 
-  // ======================================================
-// LEVEL 51 - 100
-// ======================================================
+  // ====================================================
+  // LEVEL 51
+  // ====================================================
 
-const extraPuzzles = [
   {
     type:"drag",
     question:"🚗 गाड़ी का टायर गायब है! कार को टकराने से बचाओ!",
@@ -660,6 +659,10 @@ const extraPuzzles = [
     success:"🍕 वाह! पिज्जा को ही टायर बना दिया!"
   },
 
+
+  // LEVEL 52
+  // ====================================================
+
   {
     type:"tap",
     question:"🐱 सोई हुई बिल्ली को जगाओ!",
@@ -668,6 +671,10 @@ const extraPuzzles = [
     hint:"बादलों को हटाकर सूरज की रोशनी बिल्ली पर लाओ।",
     success:"☀️ सूरज निकलते ही बिल्ली जाग गई!"
   },
+
+
+  // LEVEL 53
+  // ====================================================
 
   {
     type:"choice",
@@ -679,6 +686,10 @@ const extraPuzzles = [
     success:"🧠 सही! 2 सेब तुम्हारे पास हैं!"
   },
 
+
+  // LEVEL 54
+  // ====================================================
+
   {
     type:"drag",
     question:"🔥 आग को बुझाओ!",
@@ -687,6 +698,10 @@ const extraPuzzles = [
     hint:"पानी की बाल्टी को आग के ऊपर drag करो।",
     success:"🌊 आग बुझ गई!"
   },
+
+
+  // LEVEL 55
+  // ====================================================
 
   {
     type:"choice",
@@ -698,6 +713,10 @@ const extraPuzzles = [
     success:"🔌 सही! चार्जर!"
   },
 
+
+  // LEVEL 56
+  // ====================================================
+
   {
     type:"missing",
     question:"👀 कमरे में क्या गायब है?",
@@ -707,6 +726,10 @@ const extraPuzzles = [
     hint:"छत की तरफ देखो।",
     success:"💡 बिल्कुल सही! बल्ब गायब था!"
   },
+
+
+  // LEVEL 57
+  // ====================================================
 
   {
     type:"choice",
@@ -718,6 +741,10 @@ const extraPuzzles = [
     success:"🌙 सही! चाँद!"
   },
 
+
+  // LEVEL 58
+  // ====================================================
+
   {
     type:"tap",
     question:"🔍 सबसे भारी डंबल कौन सा है?",
@@ -727,6 +754,10 @@ const extraPuzzles = [
     success:"🏋️ बहुत मजबूत नजर है!"
   },
 
+
+  // LEVEL 59
+  // ====================================================
+
   {
     type:"drag",
     question:"🌱 पौधे को पानी दो ताकि फूल खिले!",
@@ -735,6 +766,10 @@ const extraPuzzles = [
     hint:"Watering Can को पौधे पर ले जाओ।",
     success:"🌸 सुंदर फूल खिल गया!"
   },
+
+
+  // LEVEL 60
+  // ====================================================
 
   {
     type:"choice",
@@ -746,6 +781,10 @@ const extraPuzzles = [
     success:"🧠 सही! जवाब 5 है!"
   },
 
+
+  // LEVEL 61
+  // ====================================================
+
   {
     type:"choice",
     question:"🐔 मुर्गी पहले आई या अंडा?",
@@ -756,6 +795,10 @@ const extraPuzzles = [
     success:"😂 सही! गेम बनाने वाले ने सबसे पहले code लिखा!"
   },
 
+
+  // LEVEL 62
+  // ====================================================
+
   {
     type:"drag",
     question:"🔑 तिजोरी को खोलो!",
@@ -765,6 +808,10 @@ const extraPuzzles = [
     success:"💎 तिजोरी खुल गई!"
   },
 
+
+  // LEVEL 63
+  // ====================================================
+
   {
     type:"tap",
     question:"🎯 असली हीरा पहचानो!",
@@ -773,6 +820,10 @@ const extraPuzzles = [
     hint:"जो सबसे ज्यादा चमक रहा है उसे दबाओ।",
     success:"💎 शानदार पहचान!"
   },
+
+
+  // LEVEL 64
+  // ====================================================
 
   {
     type:"missing",
@@ -784,6 +835,10 @@ const extraPuzzles = [
     success:"⚽ फुटबॉल गायब थी!"
   },
 
+
+  // LEVEL 65
+  // ====================================================
+
   {
     type:"choice",
     question:"🧠 ऐसी कौन सी चीज है जो सूखी हो तो 1 किलो, गीली हो तो 2 किलो और जल जाए तो 3 किलो?",
@@ -794,6 +849,10 @@ const extraPuzzles = [
     success:"🧠 बिल्कुल सही!"
   },
 
+
+  // LEVEL 66
+  // ====================================================
+
   {
     type:"drag",
     question:"🐵 बंदर को केला खिलाओ!",
@@ -803,6 +862,10 @@ const extraPuzzles = [
     success:"🍌🐵 बंदर खुश हो गया!"
   },
 
+
+  // LEVEL 67
+  // ====================================================
+
   {
     type:"tap",
     question:"🎈 सबसे बड़ा गुब्बारा फोड़ो!",
@@ -811,6 +874,10 @@ const extraPuzzles = [
     hint:"सबसे बड़े गुब्बारे पर tap करो।",
     success:"💥 POP! सही गुब्बारा!"
   },
+
+
+  // LEVEL 68
+  // ====================================================
 
   {
     type:"choice",
@@ -822,6 +889,10 @@ const extraPuzzles = [
     success:"💯 सही! 100!"
   },
 
+
+  // LEVEL 69
+  // ====================================================
+
   {
     type:"drag",
     question:"🐟 मछली को वापस पानी में डालो!",
@@ -830,6 +901,10 @@ const extraPuzzles = [
     hint:"मछली को तालाब तक ले जाओ।",
     success:"🌊🐟 मछली बच गई!"
   },
+
+
+  // LEVEL 70
+  // ====================================================
 
   {
     type:"choice",
@@ -841,6 +916,10 @@ const extraPuzzles = [
     success:"😜 सही!"
   },
 
+
+  // LEVEL 71
+  // ====================================================
+
   {
     type:"tap",
     question:"🔍 इनमें से कौन सा पक्षी उड़ नहीं सकता?",
@@ -849,6 +928,10 @@ const extraPuzzles = [
     hint:"पेन्गुइन ढूँढो।",
     success:"🐧 सही! पेन्गुइन उड़ नहीं सकता!"
   },
+
+
+  // LEVEL 72
+  // ====================================================
 
   {
     type:"choice",
@@ -860,6 +943,10 @@ const extraPuzzles = [
     success:"💧 बिल्कुल सही! पानी!"
   },
 
+
+  // LEVEL 73
+  // ====================================================
+
   {
     type:"drag",
     question:"🕯️ मोमबत्ती को बुझाओ!",
@@ -868,6 +955,10 @@ const extraPuzzles = [
     hint:"मोमबत्ती को ढक दो।",
     success:"🕯️ मोमबत्ती बुझ गई!"
   },
+
+
+  // LEVEL 74
+  // ====================================================
 
   {
     type:"missing",
@@ -879,6 +970,10 @@ const extraPuzzles = [
     success:"🖍️ सही! चॉक गायब था!"
   },
 
+
+  // LEVEL 75
+  // ====================================================
+
   {
     type:"choice",
     question:"🧠 अगर 1 अंडा उबलने में 10 मिनट लेता है, तो 5 अंडे उबलने में कितना समय लेंगे?",
@@ -889,6 +984,10 @@ const extraPuzzles = [
     success:"😄 सही! 10 मिनट!"
   },
 
+
+  // LEVEL 76
+  // ====================================================
+
   {
     type:"tap",
     question:"🎯 4 पत्तियों वाला Lucky Clover दबाओ!",
@@ -898,6 +997,10 @@ const extraPuzzles = [
     success:"🍀 Lucky Clover मिल गया!"
   },
 
+
+  // LEVEL 77
+  // ====================================================
+
   {
     type:"drag",
     question:"🔋 बैटरी को रिमोट में लगाओ!",
@@ -906,6 +1009,10 @@ const extraPuzzles = [
     hint:"बैटरी को रिमोट तक drag करो।",
     success:"📺 TV चालू हो गया!"
   },
+
+
+  // LEVEL 78
+  // ====================================================
 
   {
     type:"choice",
@@ -917,6 +1024,10 @@ const extraPuzzles = [
     success:"🌅 बिल्कुल सही! पूर्व!"
   },
 
+
+  // LEVEL 79
+  // ====================================================
+
   {
     type:"tap",
     question:"🔍 छुपा हुआ चूहा ढूँढो!",
@@ -925,6 +1036,10 @@ const extraPuzzles = [
     hint:"Cheese के पीछे देखो।",
     success:"🐭 चूहा पकड़ा गया!"
   },
+
+
+  // LEVEL 80
+  // ====================================================
 
   {
     type:"choice",
@@ -936,6 +1051,10 @@ const extraPuzzles = [
     success:"🌧️ सही! बादल!"
   },
 
+
+  // LEVEL 81
+  // ====================================================
+
   {
     type:"drag",
     question:"🍕 पिज्जा का टुकड़ा प्लेट में रखो!",
@@ -944,6 +1063,10 @@ const extraPuzzles = [
     hint:"स्लाइस को प्लेट में drag करो।",
     success:"🍕🍽️ Yum!"
   },
+
+
+  // LEVEL 82
+  // ====================================================
 
   {
     type:"missing",
@@ -955,6 +1078,10 @@ const extraPuzzles = [
     success:"🥄 चम्मच गायब था!"
   },
 
+
+  // LEVEL 83
+  // ====================================================
+
   {
     type:"choice",
     question:"🔢 10, 20, 30, 40, ?",
@@ -965,6 +1092,10 @@ const extraPuzzles = [
     success:"🔢 सही! 50!"
   },
 
+
+  // LEVEL 84
+  // ====================================================
+
   {
     type:"tap",
     question:"🎯 उल्लू को ढूँढकर tap करो!",
@@ -973,6 +1104,10 @@ const extraPuzzles = [
     hint:"पेड़ की डाल पर देखो।",
     success:"🦉 सही पकड़ा!"
   },
+
+
+  // LEVEL 85
+  // ====================================================
 
   {
     type:"choice",
@@ -984,6 +1119,10 @@ const extraPuzzles = [
     success:"😄 सही! सबर का फल!"
   },
 
+
+  // LEVEL 86
+  // ====================================================
+
   {
     type:"drag",
     question:"🕶️ चश्मा दादाजी को पहनाओ!",
@@ -993,6 +1132,10 @@ const extraPuzzles = [
     success:"👓 अब दादाजी साफ देख सकते हैं!"
   },
 
+
+  // LEVEL 87
+  // ====================================================
+
   {
     type:"tap",
     question:"🔍 सबसे छोटी चींटी कौन सी है?",
@@ -1001,6 +1144,10 @@ const extraPuzzles = [
     hint:"बारीक नजर से देखो।",
     success:"🐜 बहुत बढ़िया!"
   },
+
+
+  // LEVEL 88
+  // ====================================================
 
   {
     type:"choice",
@@ -1012,6 +1159,10 @@ const extraPuzzles = [
     success:"🎂🎉 बिल्कुल सही!"
   },
 
+
+  // LEVEL 89
+  // ====================================================
+
   {
     type:"drag",
     question:"⚽ बॉल को गोल पोस्ट में डालो!",
@@ -1020,6 +1171,10 @@ const extraPuzzles = [
     hint:"बॉल को नेट की तरफ drag करो।",
     success:"⚽🥅 GOAAAL!"
   },
+
+
+  // LEVEL 90
+  // ====================================================
 
   {
     type:"missing",
@@ -1031,6 +1186,10 @@ const extraPuzzles = [
     success:"🏖️ छाता गायब था!"
   },
 
+
+  // LEVEL 91
+  // ====================================================
+
   {
     type:"choice",
     question:"🔢 1, 3, 5, 7, ?",
@@ -1041,6 +1200,10 @@ const extraPuzzles = [
     success:"🔢 सही! 9!"
   },
 
+
+  // LEVEL 92
+  // ====================================================
+
   {
     type:"tap",
     question:"🎯 सिर्फ उड़ने वाला हवाई जहाज दबाओ!",
@@ -1050,6 +1213,10 @@ const extraPuzzles = [
     success:"✈️ सही पकड़ा!"
   },
 
+
+  // LEVEL 93
+  // ====================================================
+
   {
     type:"drag",
     question:"🍔 बर्गर को पूरा बनाओ!",
@@ -1058,6 +1225,10 @@ const extraPuzzles = [
     hint:"ऊपर वाला Bun बर्गर पर रखो।",
     success:"🍔 यम्मी बर्गर!"
   },
+
+
+  // LEVEL 94
+  // ====================================================
 
   {
     type:"choice",
@@ -1069,6 +1240,10 @@ const extraPuzzles = [
     success:"⏰ बिल्कुल सही! समय!"
   },
 
+
+  // LEVEL 95
+  // ====================================================
+
   {
     type:"tap",
     question:"🔍 सबसे चमकीला तारा ढूँढो!",
@@ -1077,6 +1252,10 @@ const extraPuzzles = [
     hint:"सबसे चमकीले तारे पर tap करो।",
     success:"🌟 शाबाश!"
   },
+
+
+  // LEVEL 96
+  // ====================================================
 
   {
     type:"missing",
@@ -1088,6 +1267,10 @@ const extraPuzzles = [
     success:"☁️ सही!"
   },
 
+
+  // LEVEL 97
+  // ====================================================
+
   {
     type:"choice",
     question:"🧠 किस जानवर की जीभ काली/नीली होती है?",
@@ -1098,6 +1281,10 @@ const extraPuzzles = [
     success:"🦒 बिल्कुल सही! जिराफ!"
   },
 
+
+  // LEVEL 98
+  // ====================================================
+
   {
     type:"drag",
     question:"🏆 ट्रॉफी को विजेता तक पहुँचाओ!",
@@ -1106,6 +1293,10 @@ const extraPuzzles = [
     hint:"ट्रॉफी को खिलाड़ी पर drag करो।",
     success:"🏆🥇 चैंपियन!"
   },
+
+
+  // LEVEL 99
+  // ====================================================
 
   {
     type:"tap",
@@ -1116,23 +1307,26 @@ const extraPuzzles = [
     success:"🔑 चाबी मिल गई!"
   },
 
+
+  // LEVEL 100
+  // ====================================================
+
   {
     type:"choice",
     question:"👑 100 Levels पूरे करने वाले हो! तुम्हारा दिमाग कैसा है?",
     area:"🧠 🔥 🏆",
-    options:["साधारण","तेज","सुपर जीनियस!","पता नहीं"],
+    options:[
+      "साधारण",
+      "तेज",
+      "सुपर जीनियस!",
+      "पता नहीं"
+    ],
     answer:2,
     hint:"अपने आप पर भरोसा रखो!",
     success:"🎉🔥 100 LEVELS COMPLETE! तुम सच में सुपर जीनियस हो!"
   }
+
 ];
-
-
-// ======================================================
-// LEVEL 51-100 MAIN PUZZLES में जोड़ें
-// ======================================================
-
-puzzles.push(...extraPuzzles);
 
 
 // ======================================================
@@ -1140,148 +1334,283 @@ puzzles.push(...extraPuzzles);
 // ======================================================
 
 const defaultGame = {
+
   coins:100,
+
   lives:5,
+
   unlocked:1,
+
   completed:[],
+
   currentLevel:1
+
 };
 
 
 let gameData;
 
-try{
 
-  gameData =
-    JSON.parse(
-      localStorage.getItem("tumKarSakteHoGame")
+function loadGame(){
+
+  try{
+
+    const saved =
+      localStorage.getItem(
+        "tumKarSakteHoGameV2"
+      );
+
+    if(saved){
+
+      gameData =
+        JSON.parse(saved);
+
+    }
+
+  }
+  catch(error){
+
+    gameData=null;
+
+  }
+
+
+  if(!gameData){
+
+    gameData =
+      {
+        ...defaultGame
+      };
+
+  }
+
+
+  if(!Array.isArray(gameData.completed)){
+
+    gameData.completed=[];
+
+  }
+
+
+  if(
+    typeof gameData.coins !== "number" ||
+    !Number.isFinite(gameData.coins)
+  ){
+
+    gameData.coins=100;
+
+  }
+
+
+  if(
+    typeof gameData.lives !== "number" ||
+    !Number.isFinite(gameData.lives)
+  ){
+
+    gameData.lives=5;
+
+  }
+
+
+  if(
+    typeof gameData.unlocked !== "number" ||
+    !Number.isFinite(gameData.unlocked)
+  ){
+
+    gameData.unlocked=1;
+
+  }
+
+
+  gameData.coins =
+    Math.max(
+      0,
+      Math.floor(gameData.coins)
     );
 
-}catch(error){
 
-  gameData=null;
+  gameData.lives =
+    Math.max(
+      0,
+      Math.min(
+        5,
+        Math.floor(gameData.lives)
+      )
+    );
 
-}
-
-
-if(!gameData){
-
-  gameData={
-    ...defaultGame
-  };
-
-}
-
-
-// ======================================================
-// IMPORTANT DATA SAFETY
-// ======================================================
-
-if(!Array.isArray(gameData.completed))
-  gameData.completed=[];
-
-if(typeof gameData.coins!=="number")
-  gameData.coins=100;
-
-if(typeof gameData.lives!=="number")
-  gameData.lives=5;
-
-if(typeof gameData.unlocked!=="number")
-  gameData.unlocked=1;
-
-
-// पुराना save हो तो Level 20 complete होने पर 21 unlock
-if(gameData.completed.includes(20)){
 
   gameData.unlocked =
     Math.max(
-      gameData.unlocked,
-      21
+      1,
+      Math.min(
+        puzzles.length,
+        Math.floor(gameData.unlocked)
+      )
     );
 
 }
 
 
-// Maximum Level 50
-gameData.unlocked =
-  Math.min(
-    Math.max(gameData.unlocked,1),
-    puzzles.length
-  );
+loadGame();
 
 
 let currentPuzzle=null;
+
 let currentLevel=1;
+
 let hintUsed=false;
+
+let previousMap="levels";
+
+let touchCleanup=[];
 
 
 // ======================================================
-// SAVE GAME
+// SAVE
 // ======================================================
 
 function saveGame(){
 
-  localStorage.setItem(
-    "tumKarSakteHoGame",
-    JSON.stringify(gameData)
-  );
+  try{
+
+    localStorage.setItem(
+      "tumKarSakteHoGameV2",
+      JSON.stringify(gameData)
+    );
+
+  }
+  catch(error){
+
+    console.warn(
+      "Game save failed",
+      error
+    );
+
+  }
 
 }
 
 
 // ======================================================
-// TOP BAR
+// TOP DATA
 // ======================================================
 
 function updateTop(){
 
-  const coins =
-    document.getElementById("coins");
+  const elements = {
 
-  const lives =
-    document.getElementById("lives");
+    coins:
+      document.querySelectorAll("#coins"),
 
-  const gameCoins =
-    document.getElementById("gameCoins");
+    lives:
+      document.querySelectorAll("#lives"),
+
+    homeCoins:
+      document.getElementById("homeCoins"),
+
+    homeLives:
+      document.getElementById("homeLives"),
+
+    gameCoins:
+      document.getElementById("gameCoins")
+
+  };
 
 
-  if(coins)
-    coins.innerText=gameData.coins;
+  elements.coins.forEach(
+    function(el){
 
-  if(lives)
-    lives.innerText=gameData.lives;
+      el.innerText =
+        gameData.coins;
 
-  if(gameCoins)
-    gameCoins.innerText=gameData.coins;
+    }
+  );
+
+
+  elements.lives.forEach(
+    function(el){
+
+      el.innerText =
+        gameData.lives;
+
+    }
+  );
+
+
+  if(elements.homeCoins){
+
+    elements.homeCoins.innerText =
+      gameData.coins;
+
+  }
+
+
+  if(elements.homeLives){
+
+    elements.homeLives.innerText =
+      gameData.lives;
+
+  }
+
+
+  if(elements.gameCoins){
+
+    elements.gameCoins.innerText =
+      gameData.coins;
+
+  }
 
 }
 
 
 // ======================================================
-// SCREEN
+// SHOW SCREEN
 // ======================================================
 
 function showScreen(id){
 
   document
     .querySelectorAll(".screen")
-    .forEach(screen=>{
+    .forEach(
+      function(screen){
 
-      screen.classList.remove("active");
+        screen.classList.remove(
+          "active"
+        );
 
-    });
+      }
+    );
 
 
   const screen =
     document.getElementById(id);
 
 
-  if(screen)
-    screen.classList.add("active");
+  if(screen){
+
+    screen.classList.add(
+      "active"
+    );
+
+  }
 
 
-  if(id==="levels")
+  if(id === "levels"){
+
+    previousMap="levels";
+
     renderLevels();
+
+  }
+
+
+  if(id === "mediumLevels"){
+
+    previousMap="mediumLevels";
+
+    renderLevels();
+
+  }
 
 
   updateTop();
@@ -1292,13 +1621,40 @@ function showScreen(id){
 
 
 // ======================================================
-// LEVEL MAP
+// RENDER LEVELS
 // ======================================================
 
 function renderLevels(){
 
+  renderLevelGrid(
+    "levelGrid",
+    1,
+    50
+  );
+
+  renderLevelGrid(
+    "mediumLevelGrid",
+    51,
+    100
+  );
+
+}
+
+
+// ======================================================
+// LEVEL GRID
+// ======================================================
+
+function renderLevelGrid(
+  gridId,
+  start,
+  end
+){
+
   const grid =
-    document.getElementById("levelGrid");
+    document.getElementById(
+      gridId
+    );
 
 
   if(!grid)
@@ -1308,24 +1664,31 @@ function renderLevels(){
   grid.innerHTML="";
 
 
-  puzzles.forEach((puzzle,index)=>{
-
-    const level=index+1;
-
+  for(
+    let level=start;
+    level<=end;
+    level++
+  ){
 
     const button =
-      document.createElement("button");
+      document.createElement(
+        "button"
+      );
 
 
-    button.className="level-btn";
+    button.className=
+      "level-btn";
 
 
     const completed =
-      gameData.completed.includes(level);
+      gameData.completed.includes(
+        level
+      );
 
 
     const unlocked =
-      level<=gameData.unlocked;
+      level <=
+      gameData.unlocked;
 
 
     if(completed){
@@ -1334,12 +1697,19 @@ function renderLevels(){
         "completed"
       );
 
+      button.innerHTML =
+        level+
+        '<span class="check">✓</span>';
+
     }
     else if(unlocked){
 
       button.classList.add(
         "unlocked"
       );
+
+      button.innerText=
+        level;
 
     }
     else{
@@ -1348,24 +1718,8 @@ function renderLevels(){
         "locked"
       );
 
-    }
-
-
-    if(completed){
-
-      button.innerHTML =
-        level+
-        '<span class="check">✓</span>';
-
-    }
-    else if(unlocked){
-
-      button.innerText=level;
-
-    }
-    else{
-
-      button.innerText="🔒";
+      button.innerText=
+        "🔒";
 
     }
 
@@ -1382,9 +1736,11 @@ function renderLevels(){
     }
 
 
-    grid.appendChild(button);
+    grid.appendChild(
+      button
+    );
 
-  });
+  }
 
 }
 
@@ -1396,10 +1752,14 @@ function renderLevels(){
 function startLevel(level){
 
   if(
+    !Number.isInteger(level) ||
     level<1 ||
     level>puzzles.length
-  )
+  ){
+
     return;
+
+  }
 
 
   if(
@@ -1407,7 +1767,16 @@ function startLevel(level){
     gameData.unlocked
   ){
 
-    showScreen("levels");
+    if(level<=50){
+
+      showScreen("levels");
+
+    }
+    else{
+
+      showScreen("mediumLevels");
+
+    }
 
     return;
 
@@ -1423,6 +1792,9 @@ function startLevel(level){
   }
 
 
+  cleanupTouchListeners();
+
+
   currentLevel=level;
 
   currentPuzzle=
@@ -1436,20 +1808,24 @@ function startLevel(level){
       "currentLevel"
     );
 
+
   const puzzleNumberEl =
     document.getElementById(
       "puzzleNumber"
     );
+
 
   const questionEl =
     document.getElementById(
       "question"
     );
 
+
   const area =
     document.getElementById(
       "puzzleArea"
     );
+
 
   const options =
     document.getElementById(
@@ -1457,7 +1833,11 @@ function startLevel(level){
     );
 
 
-  if(!area || !options || !questionEl){
+  if(
+    !area ||
+    !options ||
+    !questionEl
+  ){
 
     console.error(
       "Game HTML elements missing."
@@ -1468,13 +1848,20 @@ function startLevel(level){
   }
 
 
-  if(currentLevelEl)
-    currentLevelEl.innerText=level;
+  if(currentLevelEl){
+
+    currentLevelEl.innerText=
+      level;
+
+  }
 
 
-  if(puzzleNumberEl)
+  if(puzzleNumberEl){
+
     puzzleNumberEl.innerText=
       "Puzzle "+level;
+
+  }
 
 
   questionEl.innerText=
@@ -1486,19 +1873,40 @@ function startLevel(level){
   options.innerHTML="";
 
 
-  area.style.position="relative";
+  area.style.position=
+    "relative";
 
-  area.style.minHeight="190px";
+  area.style.minHeight=
+    "190px";
 
 
-  // ================= CHOICE =================
+  // ==================================================
+  // CHOICE
+  // ==================================================
 
   if(
-    currentPuzzle.type==="choice"
+    currentPuzzle.type ===
+    "choice"
   ){
 
-    area.innerText =
-      currentPuzzle.area || "";
+    if(currentPuzzle.area){
+
+      const areaText =
+        document.createElement(
+          "div"
+        );
+
+      areaText.className=
+        "puzzle-area-text";
+
+      areaText.innerText=
+        currentPuzzle.area;
+
+      area.appendChild(
+        areaText
+      );
+
+    }
 
 
     currentPuzzle.options.forEach(
@@ -1514,7 +1922,8 @@ function startLevel(level){
           "option-btn";
 
 
-        button.innerText=option;
+        button.innerText=
+          option;
 
 
         button.onclick =
@@ -1525,7 +1934,9 @@ function startLevel(level){
           };
 
 
-        options.appendChild(button);
+        options.appendChild(
+          button
+        );
 
       }
     );
@@ -1533,10 +1944,13 @@ function startLevel(level){
   }
 
 
-  // ================= DRAG =================
+  // ==================================================
+  // DRAG
+  // ==================================================
 
-  if(
-    currentPuzzle.type==="drag"
+  else if(
+    currentPuzzle.type ===
+    "drag"
   ){
 
     createDragPuzzle(
@@ -1547,10 +1961,13 @@ function startLevel(level){
   }
 
 
-  // ================= TAP =================
+  // ==================================================
+  // TAP
+  // ==================================================
 
-  if(
-    currentPuzzle.type==="tap"
+  else if(
+    currentPuzzle.type ===
+    "tap"
   ){
 
     createTapPuzzle(
@@ -1561,10 +1978,13 @@ function startLevel(level){
   }
 
 
-  // ================= MISSING =================
+  // ==================================================
+  // MISSING
+  // ==================================================
 
-  if(
-    currentPuzzle.type==="missing"
+  else if(
+    currentPuzzle.type ===
+    "missing"
   ){
 
     createMissingPuzzle(
@@ -1599,16 +2019,26 @@ function startLevel(level){
 // DRAG PUZZLES
 // ======================================================
 
-function createDragPuzzle(level,area){
+function createDragPuzzle(
+  level,
+  area
+){
 
-  area.style.position="relative";
+  area.innerHTML="";
 
-  area.style.minHeight="220px";
+  area.style.position=
+    "relative";
+
+  area.style.minHeight=
+    "220px";
 
 
   let item="🎁";
+
   let target="🎯";
 
+
+  // ================= 1-50 =================
 
   if(level===2){
 
@@ -1617,63 +2047,63 @@ function createDragPuzzle(level,area){
 
   }
 
-  if(level===6){
+  else if(level===6){
 
     item="🗑️";
     target="🗑️";
 
   }
 
-  if(level===9){
+  else if(level===9){
 
     item="🔑";
     target="🔒";
 
   }
 
-  if(level===13){
+  else if(level===13){
 
     item="🍎";
     target="🧺";
 
   }
 
-  if(level===17){
+  else if(level===17){
 
     item="🌙";
     target="☁️";
 
   }
 
-  if(level===24){
+  else if(level===24){
 
     item="🍎";
     target="🧺";
 
   }
 
-  if(level===32){
+  else if(level===32){
 
     item="🔑";
     target="🔒";
 
   }
 
-  if(level===38){
+  else if(level===38){
 
     item="🎁";
     target="👦";
 
   }
 
-  if(level===43){
+  else if(level===43){
 
     item="🌟";
     target="🌌";
 
   }
 
-  if(level===48){
+  else if(level===48){
 
     item="🪙";
     target="📦";
@@ -1681,11 +2111,116 @@ function createDragPuzzle(level,area){
   }
 
 
+  // ================= 51-100 =================
+
+  else if(level===51){
+
+    item="🍕";
+    target="🛞";
+
+  }
+
+  else if(level===54){
+
+    item="💧";
+    target="🔥";
+
+  }
+
+  else if(level===59){
+
+    item="🚿";
+    target="🌱";
+
+  }
+
+  else if(level===62){
+
+    item="🔑";
+    target="🔐";
+
+  }
+
+  else if(level===66){
+
+    item="🍌";
+    target="🐵";
+
+  }
+
+  else if(level===69){
+
+    item="🐟";
+    target="🌊";
+
+  }
+
+  else if(level===73){
+
+    item="🥣";
+    target="🕯️";
+
+  }
+
+  else if(level===77){
+
+    item="🔋";
+    target="📺";
+
+  }
+
+  else if(level===81){
+
+    item="🍕";
+    target="🍽️";
+
+  }
+
+  else if(level===86){
+
+    item="👓";
+    target="👴";
+
+  }
+
+  else if(level===89){
+
+    item="⚽";
+    target="🥅";
+
+  }
+
+  else if(level===93){
+
+    item="🍔";
+    target="🍔";
+
+  }
+
+  else if(level===98){
+
+    item="🏆";
+    target="🥇";
+
+  }
+
+
+  // ==================================================
+  // DRAG ITEM
+  // ==================================================
+
   const draggable =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
 
-  draggable.innerText=item;
+  draggable.className=
+    "drag-item";
+
+
+  draggable.innerText=
+    item;
 
 
   draggable.style.position=
@@ -1709,12 +2244,26 @@ function createDragPuzzle(level,area){
   draggable.style.touchAction=
     "none";
 
+  draggable.style.zIndex=
+    "10";
+
+
+  // ==================================================
+  // DROP TARGET
+  // ==================================================
 
   const dropZone =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
 
-  dropZone.innerText=target;
+  dropZone.className=
+    "drop-zone";
+
+
+  dropZone.innerText=
+    target;
 
 
   dropZone.style.position=
@@ -1733,12 +2282,21 @@ function createDragPuzzle(level,area){
     "none";
 
 
-  area.appendChild(draggable);
+  area.appendChild(
+    draggable
+  );
 
-  area.appendChild(dropZone);
+  area.appendChild(
+    dropZone
+  );
 
 
-  // ================= PC DRAG =================
+  // ==================================================
+  // DESKTOP DRAG
+  // ==================================================
+
+  draggable.draggable=true;
+
 
   draggable.addEventListener(
     "dragstart",
@@ -1775,29 +2333,21 @@ function createDragPuzzle(level,area){
   );
 
 
-  // ================= MOBILE DRAG =================
+  // ==================================================
+  // MOBILE TOUCH DRAG
+  // ==================================================
 
   let dragging=false;
-
-
-  draggable.addEventListener(
-    "touchstart",
-    function(event){
-
-      dragging=true;
-
-      draggable.style.transform=
-        "scale(1.2)";
-
-    },
-    {passive:false}
-  );
 
 
   const moveHandler =
     function(event){
 
       if(!dragging)
+        return;
+
+
+      if(!event.touches.length)
         return;
 
 
@@ -1812,7 +2362,7 @@ function createDragPuzzle(level,area){
         area.getBoundingClientRect();
 
 
-      draggable.style.left =
+      draggable.style.left=
         (
           touch.clientX -
           rect.left -
@@ -1820,7 +2370,7 @@ function createDragPuzzle(level,area){
         )+"px";
 
 
-      draggable.style.top =
+      draggable.style.top=
         (
           touch.clientY -
           rect.top -
@@ -1864,8 +2414,33 @@ function createDragPuzzle(level,area){
         completeLevel();
 
       }
+      else{
+
+        draggable.style.left=
+          "20px";
+
+        draggable.style.top=
+          "70px";
+
+      }
 
     };
+
+
+  draggable.addEventListener(
+    "touchstart",
+    function(event){
+
+      dragging=true;
+
+      draggable.style.transform=
+        "scale(1.2)";
+
+      event.preventDefault();
+
+    },
+    {passive:false}
+  );
 
 
   document.addEventListener(
@@ -1880,6 +2455,23 @@ function createDragPuzzle(level,area){
     endHandler
   );
 
+
+  touchCleanup.push(
+    function(){
+
+      document.removeEventListener(
+        "touchmove",
+        moveHandler
+      );
+
+      document.removeEventListener(
+        "touchend",
+        endHandler
+      );
+
+    }
+  );
+
 }
 
 
@@ -1887,11 +2479,18 @@ function createDragPuzzle(level,area){
 // TAP PUZZLES
 // ======================================================
 
-function createTapPuzzle(level,area){
+function createTapPuzzle(
+  level,
+  area
+){
 
-  area.style.position="relative";
+  area.innerHTML="";
 
-  area.style.minHeight="200px";
+  area.style.position=
+    "relative";
+
+  area.style.minHeight=
+    "200px";
 
 
   // ================= LEVEL 4 =================
@@ -1901,28 +2500,41 @@ function createTapPuzzle(level,area){
     area.innerHTML=`
 
       <div style="
-        position:absolute;
-        left:20px;
-        top:40px;
-        font-size:48px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:18px;
+        flex-wrap:wrap;
+        padding:25px;
       ">
-        🌳 🌳 🌳
-      </div>
 
-      <button
-        id="hiddenStar"
-        style="
-          position:absolute;
-          right:20px;
-          bottom:15px;
-          border:0;
-          background:transparent;
-          font-size:22px;
-          opacity:.3;
-        "
-      >
-        ⭐
-      </button>
+        <span style="font-size:48px;">
+          🌳
+        </span>
+
+        <span style="font-size:48px;">
+          🌳
+        </span>
+
+        <button
+          id="hiddenStar"
+          style="
+            border:0;
+            background:transparent;
+            font-size:28px;
+            opacity:.35;
+            cursor:pointer;
+          ">
+
+          ⭐
+
+        </button>
+
+        <span style="font-size:48px;">
+          🌳
+        </span>
+
+      </div>
 
     `;
 
@@ -1936,402 +2548,394 @@ function createTapPuzzle(level,area){
 
       };
 
+
+    return;
+
   }
 
 
   // ================= LEVEL 8 =================
 
-  else if(level===8){
+  if(level===8){
 
-    const balls=[
-      "🔵",
-      "🟢",
-      "🔴",
-      "🟡"
-    ];
-
-
-    balls.forEach(
-      function(ball){
-
-        createTapButton(
-          area,
-          ball,
-          function(){
-
-            if(ball==="🔴")
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["🔵","🟢","🔴","🟡"],
+      2
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 12 =================
 
-  else if(level===12){
+  if(level===12){
 
-    const eyes=[
-      "👁️",
-      "👁️",
-      "👀",
-      "👁️"
-    ];
-
-
-    eyes.forEach(
-      function(eye,index){
-
-        createTapButton(
-          area,
-          eye,
-          function(){
-
-            if(index===2)
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["👁️","👁️","👀","👁️"],
+      2
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 15 =================
 
-  else if(level===15){
+  if(level===15){
 
-    const dogs=[
-      "🐶",
-      "🐶",
-      "🐕",
-      "🐶"
-    ];
-
-
-    dogs.forEach(
-      function(dog,index){
-
-        createTapButton(
-          area,
-          dog,
-          function(){
-
-            if(index===2)
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["🐶","🐶","🐕","🐶"],
+      2
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 19 =================
 
-  else if(level===19){
+  if(level===19){
 
-    const colors=[
-      "🔵",
-      "🟢",
-      "🟡",
-      "🔴",
-      "🟣"
-    ];
-
-
-    colors.forEach(
-      function(color){
-
-        createTapButton(
-          area,
-          color,
-          function(){
-
-            if(color==="🔴")
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["🔵","🟢","🟡","🔴","🟣"],
+      3
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 23 =================
 
-  else if(level===23){
+  if(level===23){
 
-    const items=[
-      "🍎",
-      "🍎",
-      "🍏",
-      "🍎",
-      "🍎"
-    ];
-
-
-    items.forEach(
-      function(item,index){
-
-        createTapButton(
-          area,
-          item,
-          function(){
-
-            if(index===2)
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["🍎","🍎","🍏","🍎","🍎"],
+      2
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 28 =================
 
-  else if(level===28){
+  if(level===28){
 
-    const items=[
-      "🔴",
-      "🟢",
-      "🔵",
-      "🟡"
-    ];
-
-
-    items.forEach(
-      function(item){
-
-        createTapButton(
-          area,
-          item,
-          function(){
-
-            if(item==="🔵")
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["🔴","🟢","🔵","🟡"],
+      2
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 31 =================
 
-  else if(level===31){
+  if(level===31){
 
-    const items=[
-      "⭐",
-      "⭐",
-      "🌟",
-      "⭐",
-      "⭐"
-    ];
-
-
-    items.forEach(
-      function(item,index){
-
-        createTapButton(
-          area,
-          item,
-          function(){
-
-            if(index===2)
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["⭐","⭐","🌟","⭐","⭐"],
+      2
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 36 =================
 
-  else if(level===36){
+  if(level===36){
 
-    const items=[
-      "🍎",
-      "🍏",
-      "🍎",
-      "🍎"
-    ];
-
-
-    items.forEach(
-      function(item,index){
-
-        createTapButton(
-          area,
-          item,
-          function(){
-
-            if(index===1)
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["🍎","🍏","🍎","🍎"],
+      1
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 41 =================
 
-  else if(level===41){
+  if(level===41){
 
-    const items=[
-      "🔵",
-      "🔵",
-      "🟣",
-      "🔵",
-      "🔵"
-    ];
-
-
-    items.forEach(
-      function(item,index){
-
-        createTapButton(
-          area,
-          item,
-          function(){
-
-            if(index===2)
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["🔵","🔵","🟣","🔵","🔵"],
+      2
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 45 =================
 
-  else if(level===45){
+  if(level===45){
 
-    const items=[
-      "⭐",
-      "❤️",
-      "⭐",
-      "⭐",
-      "⭐"
-    ];
-
-
-    items.forEach(
-      function(item,index){
-
-        createTapButton(
-          area,
-          item,
-          function(){
-
-            if(index===1)
-              completeLevel();
-            else
-              wrongAnswer();
-
-          }
-        );
-
-      }
+    createTapItems(
+      area,
+      ["⭐","❤️","⭐","⭐","⭐"],
+      1
     );
+
+    return;
 
   }
 
 
   // ================= LEVEL 49 =================
 
-  else if(level===49){
+  if(level===49){
+
+    createTapItems(
+      area,
+      ["⭐","🌙","🌈","👑","☀️"],
+      3
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 52 =================
+
+  if(level===52){
 
     area.innerHTML=`
 
       <div style="
         display:flex;
-        flex-wrap:wrap;
         justify-content:center;
-        gap:18px;
-        padding:20px;
+        align-items:center;
+        gap:20px;
+        flex-wrap:wrap;
+        height:180px;
       ">
 
-        <button class="tap49">⭐</button>
-        <button class="tap49">🌙</button>
-        <button class="tap49">🌈</button>
-        <button id="crown49" class="tap49">👑</button>
-        <button class="tap49">☀️</button>
+        <span style="font-size:55px;">
+          ☁️
+        </span>
+
+        <button
+          id="sun52"
+          style="
+            border:0;
+            background:transparent;
+            font-size:55px;
+            cursor:pointer;
+          ">
+
+          ☀️
+
+        </button>
+
+        <span style="font-size:55px;">
+          🐱💤
+        </span>
 
       </div>
 
     `;
 
 
-    document
-      .querySelectorAll(".tap49")
-      .forEach(
-        function(button){
+    document.getElementById(
+      "sun52"
+    ).onclick =
+      function(){
 
-          button.style.border="0";
-          button.style.background=
-            "transparent";
-          button.style.fontSize="48px";
+        completeLevel();
+
+      };
 
 
-          button.onclick=
-            function(){
+    return;
 
-              if(button.id==="crown49")
-                completeLevel();
-              else
-                wrongAnswer();
+  }
 
-            };
 
-        }
-      );
+  // ================= LEVEL 58 =================
+
+  if(level===58){
+
+    createTapItems(
+      area,
+      ["🏋️","🏋️","🏋️","🏋️"],
+      3
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 63 =================
+
+  if(level===63){
+
+    createTapItems(
+      area,
+      ["💎","🔷","💠","💎"],
+      2
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 67 =================
+
+  if(level===67){
+
+    createTapItems(
+      area,
+      ["🎈","🎈","🎈","🎈","🎈"],
+      4
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 71 =================
+
+  if(level===71){
+
+    createTapItems(
+      area,
+      ["🐦","🦅","🐧","🦜"],
+      2
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 76 =================
+
+  if(level===76){
+
+    createTapItems(
+      area,
+      ["☘️","🍀","☘️","☘️"],
+      1
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 79 =================
+
+  if(level===79){
+
+    createTapItems(
+      area,
+      ["🧀","🧀","🐭","🧀"],
+      2
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 84 =================
+
+  if(level===84){
+
+    createTapItems(
+      area,
+      ["🌳","🦉","🌳","🌳"],
+      1
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 87 =================
+
+  if(level===87){
+
+    createTapItems(
+      area,
+      ["🐜","🐜","🐜","🐜"],
+      3
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 92 =================
+
+  if(level===92){
+
+    createTapItems(
+      area,
+      ["☁️","🚗","✈️","🚁"],
+      2
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 95 =================
+
+  if(level===95){
+
+    createTapItems(
+      area,
+      ["⭐","⭐","🌟","⭐"],
+      2
+    );
+
+    return;
+
+  }
+
+
+  // ================= LEVEL 99 =================
+
+  if(level===99){
+
+    createTapItems(
+      area,
+      ["🔑","🔑","🗝️","🔑"],
+      2
+    );
+
+    return;
 
   }
 
@@ -2339,368 +2943,42 @@ function createTapPuzzle(level,area){
 
 
 // ======================================================
-// TAP BUTTON HELPER
+// TAP HELPER
 // ======================================================
 
-function createTapButton(
+function createTapItems(
   area,
-  text,
-  callback
+  items,
+  correctIndex
 ){
 
-  const button =
+  const wrapper =
     document.createElement(
-      "button"
+      "div"
     );
 
 
-  button.innerText=text;
+  wrapper.style.display=
+    "flex";
 
+  wrapper.style.flexWrap=
+    "wrap";
 
-  button.style.border="0";
+  wrapper.style.justifyContent=
+    "center";
 
-  button.style.background=
-    "transparent";
+  wrapper.style.alignItems=
+    "center";
 
-  button.style.fontSize=
-    "48px";
-
-  button.style.cursor=
-    "pointer";
-
-  button.style.padding=
+  wrapper.style.gap=
     "10px";
 
+  wrapper.style.padding=
+    "20px";
 
-  button.onclick=callback;
 
-
-  area.appendChild(button);
-
-}
-
-
-// ======================================================
-// MISSING OBJECT PUZZLE
-// ======================================================
-
-function createMissingPuzzle(
-  level,
-  area,
-  options
-){
-
-  area.style.position="relative";
-
-  area.style.minHeight="240px";
-
-
-  let scene="";
-
-
-  // ================= LEVEL 21 =================
-
-  if(level===21){
-
-    scene=`
-
-      <div style="
-        width:100%;
-        height:220px;
-        border-radius:20px;
-        background:
-          linear-gradient(
-            #bde7ff 0 60%,
-            #8bd17c 60%
-          );
-        position:relative;
-        overflow:hidden;
-      ">
-
-        <div style="
-          position:absolute;
-          top:10px;
-          right:20px;
-          font-size:40px;
-        ">☀️</div>
-
-        <div style="
-          position:absolute;
-          left:20px;
-          bottom:15px;
-          font-size:50px;
-        ">🌳</div>
-
-        <div style="
-          position:absolute;
-          left:80px;
-          bottom:15px;
-          font-size:45px;
-        ">🌳</div>
-
-        <div style="
-          position:absolute;
-          left:42%;
-          bottom:15px;
-          font-size:52px;
-        ">🏠</div>
-
-        <div style="
-          position:absolute;
-          right:80px;
-          bottom:18px;
-          font-size:38px;
-        ">🌸</div>
-
-        <div style="
-          position:absolute;
-          right:20px;
-          bottom:15px;
-          font-size:46px;
-        ">🐶</div>
-
-        <div style="
-          position:absolute;
-          left:50%;
-          top:55px;
-          font-size:30px;
-        ">🦋</div>
-
-      </div>
-
-    `;
-
-  }
-
-
-  // ================= LEVEL 26 =================
-
-  else if(level===26){
-
-    scene=`
-
-      <div style="
-        width:100%;
-        height:220px;
-        border-radius:20px;
-        background:
-          linear-gradient(
-            #bde7ff 0 60%,
-            #8bd17c 60%
-          );
-        position:relative;
-        overflow:hidden;
-      ">
-
-        <div style="
-          position:absolute;
-          top:10px;
-          left:20px;
-          font-size:42px;
-        ">☀️</div>
-
-        <div style="
-          position:absolute;
-          left:20px;
-          bottom:15px;
-          font-size:50px;
-        ">🌳</div>
-
-        <div style="
-          position:absolute;
-          left:42%;
-          bottom:15px;
-          font-size:52px;
-        ">🏠</div>
-
-        <div style="
-          position:absolute;
-          right:30px;
-          bottom:15px;
-          font-size:42px;
-        ">🌸</div>
-
-      </div>
-
-    `;
-
-  }
-
-
-  // ================= LEVEL 34 =================
-
-  else if(level===34){
-
-    scene=`
-
-      <div style="
-        width:100%;
-        height:220px;
-        border-radius:20px;
-        background:
-          linear-gradient(
-            #9edcff 0 45%,
-            #57b7e8 45% 100%
-          );
-        position:relative;
-        overflow:hidden;
-      ">
-
-        <div style="
-          position:absolute;
-          top:10px;
-          right:20px;
-          font-size:42px;
-        ">☀️</div>
-
-        <div style="
-          position:absolute;
-          left:25px;
-          bottom:15px;
-          font-size:50px;
-        ">🌳</div>
-
-        <div style="
-          position:absolute;
-          left:45%;
-          bottom:30px;
-          font-size:50px;
-        ">🏠</div>
-
-        <div style="
-          position:absolute;
-          right:30px;
-          bottom:20px;
-          font-size:40px;
-        ">🌸</div>
-
-      </div>
-
-    `;
-
-  }
-
-
-  // ================= LEVEL 40 =================
-
-  else if(level===40){
-
-    scene=`
-
-      <div style="
-        width:100%;
-        height:220px;
-        border-radius:20px;
-        background:
-          linear-gradient(
-            #bde7ff 0 60%,
-            #8bd17c 60%
-          );
-        position:relative;
-        overflow:hidden;
-      ">
-
-        <div style="
-          position:absolute;
-          top:10px;
-          left:20px;
-          font-size:42px;
-        ">☀️</div>
-
-        <div style="
-          position:absolute;
-          left:25px;
-          bottom:15px;
-          font-size:50px;
-        ">🌳</div>
-
-        <div style="
-          position:absolute;
-          left:43%;
-          bottom:15px;
-          font-size:52px;
-        ">🏠</div>
-
-        <div style="
-          position:absolute;
-          right:25px;
-          bottom:15px;
-          font-size:40px;
-        ">🌸</div>
-
-      </div>
-
-    `;
-
-  }
-
-
-  // ================= LEVEL 46 =================
-
-  else if(level===46){
-
-    scene=`
-
-      <div style="
-        width:100%;
-        height:220px;
-        border-radius:20px;
-        background:
-          linear-gradient(
-            #bde7ff 0 60%,
-            #8bd17c 60%
-          );
-        position:relative;
-        overflow:hidden;
-      ">
-
-        <div style="
-          position:absolute;
-          top:10px;
-          right:20px;
-          font-size:42px;
-        ">☀️</div>
-
-        <div style="
-          position:absolute;
-          left:25px;
-          bottom:15px;
-          font-size:50px;
-        ">🌳</div>
-
-        <div style="
-          position:absolute;
-          left:42%;
-          bottom:15px;
-          font-size:52px;
-        ">🏠</div>
-
-        <div style="
-          position:absolute;
-          right:30px;
-          bottom:15px;
-          font-size:40px;
-        ">🌸</div>
-
-      </div>
-
-    `;
-
-  }
-
-
-  area.innerHTML=scene;
-
-
-  // ===============================
-  // OPTIONS
-  // ===============================
-
-  options.innerHTML="";
-
-
-  currentPuzzle.options.forEach(
-    function(option,index){
+  items.forEach(
+    function(item,index){
 
       const button =
         document.createElement(
@@ -2708,20 +2986,34 @@ function createMissingPuzzle(
         );
 
 
-      button.className=
-        "option-btn";
+      button.innerText=
+        item;
 
 
-      button.innerText=option;
+      button.style.border=
+        "0";
+
+      button.style.background=
+        "transparent";
+
+      button.style.fontSize=
+        "48px";
+
+      button.style.cursor=
+        "pointer";
+
+      button.style.padding=
+        "10px";
+
+      button.style.touchAction=
+        "manipulation";
 
 
-      button.onclick=
+      button.onclick =
         function(){
 
-          if(
-            index===
-            currentPuzzle.answer
-          ){
+          if(index===
+            correctIndex){
 
             completeLevel();
 
@@ -2735,10 +3027,366 @@ function createMissingPuzzle(
         };
 
 
-      options.appendChild(button);
+      wrapper.appendChild(
+        button
+      );
 
     }
   );
+
+
+  area.appendChild(
+    wrapper
+  );
+
+}
+
+
+// ======================================================
+// MISSING OBJECT
+// ======================================================
+
+function createMissingPuzzle(
+  level,
+  area,
+  options
+){
+
+  area.innerHTML="";
+
+  area.style.position=
+    "relative";
+
+  area.style.minHeight=
+    "240px";
+
+
+  let scene="";
+
+
+  // ==================================================
+  // LEVEL 21
+  // ==================================================
+
+  if(level===21){
+
+    scene=`
+
+      <div class="missing-scene">
+
+        <span class="sun">☀️</span>
+
+        <span class="tree t1">🌳</span>
+
+        <span class="tree t2">🌳</span>
+
+        <span class="house">🏠</span>
+
+        <span class="flower">🌸</span>
+
+        <span class="dog">🐶</span>
+
+        <span class="butterfly">🦋</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 26
+  // ==================================================
+
+  else if(level===26){
+
+    scene=`
+
+      <div class="missing-scene">
+
+        <span class="sun">☀️</span>
+
+        <span class="tree t1">🌳</span>
+
+        <span class="house">🏠</span>
+
+        <span class="flower">🌸</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 34
+  // ==================================================
+
+  else if(level===34){
+
+    scene=`
+
+      <div
+        class="missing-scene water-scene">
+
+        <span class="sun">☀️</span>
+
+        <span class="tree t1">🌳</span>
+
+        <span class="house">🏠</span>
+
+        <span class="flower">🌸</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 40
+  // ==================================================
+
+  else if(level===40){
+
+    scene=`
+
+      <div class="missing-scene">
+
+        <span class="sun">☀️</span>
+
+        <span class="tree t1">🌳</span>
+
+        <span class="house">🏠</span>
+
+        <span class="flower">🌸</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 46
+  // ==================================================
+
+  else if(level===46){
+
+    scene=`
+
+      <div class="missing-scene">
+
+        <span class="sun">☀️</span>
+
+        <span class="tree t1">🌳</span>
+
+        <span class="house">🏠</span>
+
+        <span class="flower">🌸</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 56
+  // ==================================================
+
+  else if(level===56){
+
+    scene=`
+
+      <div class="missing-scene room-scene">
+
+        <span class="chair">🪑</span>
+
+        <span class="frame">🖼️</span>
+
+        <span class="clock">⏰</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 64
+  // ==================================================
+
+  else if(level===64){
+
+    scene=`
+
+      <div class="missing-scene park-scene">
+
+        <span class="tree t1">🌳</span>
+
+        <span class="tree t2">🌳</span>
+
+        <span class="butterfly">🦋</span>
+
+        <span class="dog">🐶</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 74
+  // ==================================================
+
+  else if(level===74){
+
+    scene=`
+
+      <div class="missing-scene classroom-scene">
+
+        <span class="board">📑</span>
+
+        <span class="scale">📐</span>
+
+        <span class="pen">🖊️</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 82
+  // ==================================================
+
+  else if(level===82){
+
+    scene=`
+
+      <div class="missing-scene kitchen-scene">
+
+        <span>🔪</span>
+
+        <span>🍽️</span>
+
+        <span>🍳</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 90
+  // ==================================================
+
+  else if(level===90){
+
+    scene=`
+
+      <div class="missing-scene beach-scene">
+
+        <span>🏐</span>
+
+        <span>🦀</span>
+
+        <span>⛵</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // ==================================================
+  // LEVEL 96
+  // ==================================================
+
+  else if(level===96){
+
+    scene=`
+
+      <div class="missing-scene space-scene">
+
+        <span>🚀</span>
+
+        <span>🪐</span>
+
+        <span>⭐</span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  area.innerHTML=
+    scene;
+
+
+  options.innerHTML="";
+
+
+  // ==================================================
+  // OPTIONS
+  // ==================================================
+
+  if(
+    currentPuzzle &&
+    Array.isArray(
+      currentPuzzle.options
+    )
+  ){
+
+    currentPuzzle.options.forEach(
+      function(option,index){
+
+        const button =
+          document.createElement(
+            "button"
+          );
+
+
+        button.className=
+          "option-btn";
+
+
+        button.innerText=
+          option;
+
+
+        button.onclick =
+          function(){
+
+            checkAnswer(index);
+
+          };
+
+
+        options.appendChild(
+          button
+        );
+
+      }
+    );
+
+  }
 
 }
 
@@ -2772,14 +3420,24 @@ function checkAnswer(selected){
 
 // ======================================================
 // WRONG ANSWER
-// NO VIBRATION
 // ======================================================
 
 function wrongAnswer(){
 
+  if(!currentPuzzle)
+    return;
+
+
+  gameSound("wrong");
+
+  gameVibrate(
+    [80,40,80]
+  );
+
+
   const card =
     document.querySelector(
-      ".game-card"
+      ".question-card"
     );
 
 
@@ -2800,8 +3458,6 @@ function wrongAnswer(){
   }
 
 
-  // ================= SOUND =================
-
   const wrongSound =
     document.getElementById(
       "wrongSound"
@@ -2821,13 +3477,13 @@ function wrongAnswer(){
   }
 
 
-  // ================= LIFE =================
-
   gameData.lives--;
 
+  if(gameData.lives<0){
 
-  if(gameData.lives<0)
     gameData.lives=0;
+
+  }
 
 
   updateTop();
@@ -2859,14 +3515,14 @@ function wrongAnswer(){
   }
 
 
-  // ================= GAME OVER =================
-
   if(gameData.lives<=0){
 
     setTimeout(
       function(){
 
-        showScreen("gameover");
+        showScreen(
+          "gameover"
+        );
 
       },
       700
@@ -2887,12 +3543,14 @@ function completeLevel(){
     return;
 
 
-  // ================= CELEBRATION =================
+  gameSound("correct");
 
-  showVictoryCelebration();
+  gameSound("coin");
 
+  gameVibrate(
+    [50,30,100]
+  );
 
-  // ================= WIN SOUND =================
 
   const winSound =
     document.getElementById(
@@ -2913,7 +3571,8 @@ function completeLevel(){
   }
 
 
-  // ================= ALREADY COMPLETE =================
+  showVictoryCelebration();
+
 
   const alreadyCompleted =
     gameData.completed.includes(
@@ -2924,11 +3583,12 @@ function completeLevel(){
   let stars=3;
 
 
-  if(hintUsed)
+  if(hintUsed){
+
     stars=2;
 
+  }
 
-  // ================= REWARD =================
 
   if(!alreadyCompleted){
 
@@ -2936,12 +3596,14 @@ function completeLevel(){
       currentLevel
     );
 
-    gameData.coins+=20;
+    gameData.coins += 20;
 
   }
 
 
-  // ================= UNLOCK NEXT =================
+  // ==================================================
+  // NEXT UNLOCK
+  // ==================================================
 
   if(
     currentLevel===
@@ -2960,8 +3622,6 @@ function completeLevel(){
   }
 
 
-  // ================= SAVE =================
-
   gameData.currentLevel=
     currentLevel;
 
@@ -2970,8 +3630,6 @@ function completeLevel(){
 
   updateTop();
 
-
-  // ================= RESULT =================
 
   const resultTitle =
     document.getElementById(
@@ -2985,10 +3643,26 @@ function completeLevel(){
     );
 
 
+  const resultReward =
+    document.getElementById(
+      "resultReward"
+    );
+
+
   if(resultTitle){
 
-    resultTitle.innerText=
-      "🎉 LEVEL COMPLETE!";
+    if(currentLevel===100){
+
+      resultTitle.innerText=
+        "👑 100 LEVELS COMPLETE!";
+
+    }
+    else{
+
+      resultTitle.innerText=
+        "🎉 LEVEL COMPLETE!";
+
+    }
 
   }
 
@@ -3001,32 +3675,18 @@ function completeLevel(){
   }
 
 
-  const result =
-    document.getElementById(
-      "result"
-    );
+  if(resultReward){
 
-
-  if(result){
-
-    const reward =
-      result.querySelector(
-        ".reward"
-      );
-
-
-    if(reward){
-
-      reward.innerText=
-        "⭐".repeat(stars)+
-        "  🪙 +20 Coins";
-
-    }
+    resultReward.innerText=
+      "⭐".repeat(stars)+
+      "  🪙 +20 Coins";
 
   }
 
 
-  showScreen("result");
+  showScreen(
+    "result"
+  );
 
 }
 
@@ -3050,19 +3710,36 @@ function nextLevel(){
       next<=gameData.unlocked
     ){
 
-      startLevel(next);
+      startLevel(
+        next
+      );
 
     }
     else{
 
-      showScreen("levels");
+      if(next<=50){
+
+        showScreen(
+          "levels"
+        );
+
+      }
+      else{
+
+        showScreen(
+          "mediumLevels"
+        );
+
+      }
 
     }
 
   }
   else{
 
-    showScreen("levels");
+    showScreen(
+      "mediumLevels"
+    );
 
   }
 
@@ -3079,13 +3756,13 @@ function useHint(){
     return;
 
 
+  const message =
+    document.getElementById(
+      "gameMessage"
+    );
+
+
   if(hintUsed){
-
-    const message =
-      document.getElementById(
-        "gameMessage"
-      );
-
 
     if(message){
 
@@ -3094,19 +3771,12 @@ function useHint(){
 
     }
 
-
     return;
 
   }
 
 
   if(gameData.coins<20){
-
-    const message =
-      document.getElementById(
-        "gameMessage"
-      );
-
 
     if(message){
 
@@ -3115,13 +3785,12 @@ function useHint(){
 
     }
 
-
     return;
 
   }
 
 
-  gameData.coins-=20;
+  gameData.coins -= 20;
 
   hintUsed=true;
 
@@ -3129,12 +3798,6 @@ function useHint(){
   saveGame();
 
   updateTop();
-
-
-  const message =
-    document.getElementById(
-      "gameMessage"
-    );
 
 
   if(message){
@@ -3145,14 +3808,21 @@ function useHint(){
 
   }
 
+
+  gameSound("coin");
+
 }
 
 
 // ======================================================
-// SKIP LEVEL
+// SKIP
 // ======================================================
 
 function skipLevel(){
+
+  if(!currentPuzzle)
+    return;
+
 
   if(gameData.coins<30){
 
@@ -3169,13 +3839,25 @@ function skipLevel(){
 
     }
 
-
     return;
 
   }
 
 
-  gameData.coins-=30;
+  gameData.coins -= 30;
+
+
+  if(
+    !gameData.completed.includes(
+      currentLevel
+    )
+  ){
+
+    gameData.completed.push(
+      currentLevel
+    );
+
+  }
 
 
   if(
@@ -3214,6 +3896,9 @@ function skipLevel(){
   }
 
 
+  gameSound("coin");
+
+
   setTimeout(
     function(){
 
@@ -3229,7 +3914,7 @@ function skipLevel(){
       }
 
     },
-    500
+    400
   );
 
 }
@@ -3247,7 +3932,78 @@ function restoreLives(){
 
   updateTop();
 
-  showScreen("levels");
+
+  if(
+    gameData.currentLevel>=51
+  ){
+
+    showScreen(
+      "mediumLevels"
+    );
+
+  }
+  else{
+
+    showScreen(
+      "levels"
+    );
+
+  }
+
+}
+
+
+// ======================================================
+// BACK FROM GAME
+// ======================================================
+
+function goBackFromGame(){
+
+  cleanupTouchListeners();
+
+
+  if(
+    currentLevel>=51
+  ){
+
+    showScreen(
+      "mediumLevels"
+    );
+
+  }
+  else{
+
+    showScreen(
+      "levels"
+    );
+
+  }
+
+}
+
+
+// ======================================================
+// CURRENT MAP
+// ======================================================
+
+function openCurrentMap(){
+
+  if(
+    currentLevel>=51
+  ){
+
+    showScreen(
+      "mediumLevels"
+    );
+
+  }
+  else{
+
+    showScreen(
+      "levels"
+    );
+
+  }
 
 }
 
@@ -3258,17 +4014,21 @@ function restoreLives(){
 
 function resetGame(){
 
-  if(
-    !confirm(
+  const confirmReset =
+    confirm(
       "पूरा Game Reset करना है?"
-    )
-  )
+    );
+
+
+  if(!confirmReset)
     return;
 
 
-  gameData={
-    ...defaultGame
-  };
+  gameData =
+    {
+      ...defaultGame,
+      completed:[]
+    };
 
 
   currentLevel=1;
@@ -3282,7 +4042,9 @@ function resetGame(){
 
   updateTop();
 
-  showScreen("home");
+  showScreen(
+    "home"
+  );
 
 }
 
@@ -3306,23 +4068,24 @@ function showVictoryCelebration(){
   container.innerHTML="";
 
 
-  // 🎉 BIG POP
-
   const pop =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
 
   pop.className=
     "victory-pop";
 
 
-  pop.innerText="🎉";
+  pop.innerText=
+    "🎉";
 
 
-  container.appendChild(pop);
+  container.appendChild(
+    pop
+  );
 
-
-  // 🎊 CONFETTI
 
   for(
     let i=0;
@@ -3376,63 +4139,83 @@ function showVictoryCelebration(){
 
 
 // ======================================================
-// START GAME
+// CLEAN TOUCH LISTENERS
 // ======================================================
 
-document.addEventListener(
-  "DOMContentLoaded",
-  function(){
+function cleanupTouchListeners(){
 
-    // पुराने save से Level 21 fix
-    if(
-      gameData.completed.includes(20)
-    ){
+  touchCleanup.forEach(
+    function(cleanup){
 
-      gameData.unlocked=
-        Math.max(
-          gameData.unlocked,
-          21
-        );
+      try{
+
+        cleanup();
+
+      }
+      catch(error){}
 
     }
+  );
 
 
-    saveGame();
-
-    updateTop();
-
-    renderLevels();
-
-  }
-);
-
-// ===============================
-// BACKGROUND MUSIC
-// ===============================
-
-const backgroundMusic =
-  document.getElementById("backgroundMusic");
-
-function startBackgroundMusic() {
-
-  if (!backgroundMusic)
-    return;
-
-  backgroundMusic.volume = 0.12;
-
-  backgroundMusic.play().catch(() => {
-    // Browser autoplay को रोक सकता है
-  });
+  touchCleanup=[];
 
 }
 
 
-// Game में पहली user click/touch पर music शुरू
+// ======================================================
+// BACKGROUND MUSIC
+// ======================================================
+
+function startBackgroundMusic(){
+
+  const backgroundMusic =
+    document.getElementById(
+      "backgroundMusic"
+    );
+
+
+  if(!backgroundMusic)
+    return;
+
+
+  backgroundMusic.volume=
+    0.12;
+
+
+  backgroundMusic
+    .play()
+    .catch(
+      function(){}
+    );
+
+}
+
+
+// ======================================================
+// FIRST USER INTERACTION
+// ======================================================
+
 document.addEventListener(
   "click",
-  function startMusicOnce() {
+  function startMusicOnce(){
+
+    const ctx =
+      getAudioContext();
+
+
+    if(ctx &&
+      ctx.state==="suspended"){
+
+      ctx.resume().catch(
+        function(){}
+      );
+
+    }
+
 
     startBackgroundMusic();
+
 
     document.removeEventListener(
       "click",
@@ -3440,6 +4223,23 @@ document.addEventListener(
     );
 
   },
-  { once: true }
+  {once:true}
 );
 
+
+// ======================================================
+// DOM READY
+// ======================================================
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function(){
+
+    updateTop();
+
+    renderLevels();
+
+    saveGame();
+
+  }
+);
